@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        // your code here
+        const inflationRate = 5;
+        let annualCost = 35000;
+        let totalCost;
+        let annualSaving;
+        let yearsUntilCollege = 5;
+
+        console.log(`For a 4 years college degree with Annual cost: $${annualCost} and Inflation rate: ${inflationRate}%`);
+        annualCost += (0.05 * annualCost);
+        annualCost += (0.05 * annualCost);
+        annualCost += (0.05 * annualCost);
+        annualCost += (0.05 * annualCost);
+        totalCost = Math.floor(annualCost);
+        annualSaving = totalCost / 5;
+        console.log(`You have to pay $${totalCost}.`);
+        console.log(`You need to save ${annualSaving} annually for ${yearsUntilCollege} years.`)
+
+    </script>
+</body>
+
+</html>
