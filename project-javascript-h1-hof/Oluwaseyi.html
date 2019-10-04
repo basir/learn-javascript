@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions Benchmark</title>
+</head>
+<body>
+    <script>
+        //3. Higher Order Function (HOF)
+        const repeat = (func, param, times) =>{
+            for (let i=0; i<times; i++){
+                func(param);
+            }
+            return console.log('Run number: ' + times);
+        }
+        // defining the function 'func'.
+            const func = param => {};
+
+        //4.
+        function repeatDuration(repeat, times,func, param){
+            let startTime = new Date();
+            repeat(func, param, times);
+            let stopTime = new Date();
+            return console.log("Running time is " + (stopTime.getTime() - startTime.getTime()) + " milliseconds");
+            }
+
+        //5. A function that calculates the factorial of a number.
+          function factorial(n){
+            if (n < 0){
+              return console.log('Please enter a positive number/integer.');}
+            else if (n === 0){
+              let answer = 1;
+              return console.log(`The factorial of ${n} = ${answer}.`);}
+            else {
+                 let answer = 1
+                 for(i = n; i > 0 ; i--){
+                    answer = answer * i};
+                  return console.log(`The factorial of ${n} is ${answer}`);
+              }
+          }
+        //6. Passing the function 'factorial' as an argument to 'repeatDuration'.
+        repeatDuration(repeat,1000,factorial,20);
+
+    </script>
+</body>
+</html>
