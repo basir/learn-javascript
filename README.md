@@ -1,6 +1,10 @@
 # Learn JavaScript
 
-by Basir JD Mentorship
+- Download Free eBook: https://codingwithbasir.com/download
+- Fork and Clone This repository
+- Code Project A1
+- Send a Pull Request
+- Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## INTRODUCTION
 
