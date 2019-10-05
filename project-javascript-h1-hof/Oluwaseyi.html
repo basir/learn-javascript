@@ -10,18 +10,15 @@
         const repeat = (func, param, times) =>{
             for (let i=0; i<times; i++){
                 func(param);
+                console.log('Run number: ' + (i+1));
             }
-            return console.log('Run number: ' + times);
         }
-        // defining the function 'func'.
-            const func = param => {};
-
         //4.
         function repeatDuration(repeat, times,func, param){
-            let startTime = new Date();
+            const startTime = new Date();
             repeat(func, param, times);
-            let stopTime = new Date();
-            return console.log("Running time is " + (stopTime.getTime() - startTime.getTime()) + " milliseconds");
+            const stopTime = new Date();
+            return console.log("Running time is " + (stopTime - startTime) + " milliseconds");
             }
 
         //5. A function that calculates the factorial of a number.
@@ -29,7 +26,7 @@
             if (n < 0){
               return console.log('Please enter a positive number/integer.');}
             else if (n === 0){
-              let answer = 1;
+              const answer = 1;
               return console.log(`The factorial of ${n} = ${answer}.`);}
             else {
                  let answer = 1
