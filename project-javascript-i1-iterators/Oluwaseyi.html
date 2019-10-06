@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Mood Actions</title>
+</head>
+<body>
+    <script>
+        //3. Create an array
+        let actions = ['rest and refresh','connect with others','take time to enjoy','share interests','contribute to community','take care of yourself','challenge yourself','reduce your stress','notice the here and now','ask for help'];
+        for(let i=0; i< actions.length; i++){
+            console.log(' - ' + actions[i]);  //4. Logging the array to the console.
+        }
+
+        //5. Logging the array items to the console using .forEach() method
+        actions.forEach( arrayItems => console.log(' - ' + arrayItems));
+
+        //6. Logging the array items as ordered list.
+        const orderedActions = actions.sort();
+        actions.forEach(arrayItems => {
+            console.log(' - ' + arrayItems);
+            }
+        );
+
+        //7. Using the .filter() method
+        const filteredActions = actions.filter(arrayItems => {
+            return arrayItems[0] === 'c';
+            });
+         filteredActions.sort().forEach(arrayItems => {
+            console.log(' - ' + arrayItems);
+            }
+        );
+
+        //8.
+        const actionLetters = actions.map(arrayItems => {
+                newArrayItems = arrayItems.replace(/ +/g, "");
+                return newArrayItems.length;
+            }
+        );
+        console.log(actionLetters);
+
+        //9. Summing up the number of letters in the array.
+        const sumOfLetters = actionLetters.reduce((accumulator, currentValue)=>{
+            return accumulator + currentValue;
+            });
+        console.log(sumOfLetters);
+
+        //10. Using .findIndex() method
+        const returnedIndex = actionLetters.findIndex(arrayItems => {
+            return arrayItems < 10;
+            }
+        );
+        console.log(returnedIndex);
+
+    </script>
+</body>
+</html>
