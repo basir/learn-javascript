@@ -16,20 +16,17 @@
         actions.forEach( arrayItems => console.log(' - ' + arrayItems));
 
         //6. Logging the array items as ordered list.
-        const orderedActions = actions.sort();
-        actions.forEach(arrayItems => {
-            console.log(' - ' + arrayItems);
-            }
-        );
+        const orderedActions = actions.forEach((arrayItems, i) => {
+            console.log('%d: %s', i, arrayItems);
+            });
 
         //7. Using the .filter() method
         const filteredActions = actions.filter(arrayItems => {
             return arrayItems[0] === 'c';
             });
-         filteredActions.sort().forEach(arrayItems => {
-            console.log(' - ' + arrayItems);
-            }
-        );
+         filteredActions.forEach((arrayItems, i) => {
+            console.log('%d: %s', i, arrayItems);
+            });
 
         //8.
         const actionLetters = actions.map(arrayItems => {
