@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let Size = 'Small';
+        let Energy = 'Medium';
+        let Height = 9;
+        let Breed = 'Affenpinscher';
+
+        if (Size === 'Small' && Height < 9) {
+            console.log("Food: Dry Dog Food");
+        } else if (Size === 'Medium' || Height > 9) {
+            console.log("Food: Dehydrated Dog Food");
+        } else if (Size === 'Big' && Height > 17) {
+            console.log("Food: Raw Dog Food");
+        } else {
+            console.log("Canned Dog Food");
+        }
+
+        switch (Breed) {
+            case 'Affenpinscher':
+                console.log("Dry");
+                break;
+            case 'Akita':
+                console.log("Dehydrated");
+                break;
+            case 'Cesky Terrier':
+                console.log("Raw");
+                break;
+            case 'Chihuahua':
+                console.log("canned");
+                break;
+            default:
+                console.log("Breed not found.")
+                break;
+        }
+    </script>
+</body>
+
+</html>
