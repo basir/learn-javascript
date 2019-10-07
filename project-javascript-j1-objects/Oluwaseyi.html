@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+    <script>
+        //3. Creating an Object
+        const employee = {
+            name: 'Doxa',
+            age: 37,
+            department: 'Electrical'
+            };
+        //4. Logging the elements of the object to console.
+        for (let elements in employee){
+            console.log(`${elements}: ${employee[elements]}`);
+            }
+
+        //5. Adding a new property to the object.
+        employee['Phone Number'] = 00123456789;
+        console.log(`Employee ${employee.name} number is ${employee['Phone Number']}`);
+
+        //6. A function that accepts an object and returns the property value
+        function getPropValue(objectName,property){
+                return objectName[property];
+                };
+        //7. Logging to console.
+        console.log(getPropValue(employee,'name'));
+        console.log(getPropValue(employee,'Phone Number'));
+
+        //8. Adding a method to an object
+        employee.showVisitCard = () => {
+            for ( let element in employee){
+                console.log(element);
+            }
+        };
+        employee.showVisitCard();
+
+        //9. Adding another property 'educations' to the object 'employee'.
+        employee.educations = {
+          universtiy1: { gpa: 3.5, year: 2019 },
+          universtiy2: { gpa: 4.0, year: 2015 },
+          universtiy3: { gpa: 3.75, year: 2010 },
+          universtiy4: { gpa: 3.0, year: 2005 }
+        };
+
+        //10. Logging education into console
+        for (let pty in employee.educations){
+             console.log(`${pty}: {gpa: ${employee['educations'][pty].gpa}, year: ${employee['educations'][pty].year}}`);
+            };
+
+        //11. Calculate the average of the gpa and logging it to console.
+        let totalSum = 0;
+        let number = 0;
+        for (let pty in employee.educations){
+            totalSum = employee['educations'][pty].gpa + totalSum;
+            number = number +1 ;
+           };
+        const averageGPA = totalSum/number;
+        console.log(`The average gpa is : ${averageGPA}`);
+
+
+
+    </script>
+</body>
+</html>
