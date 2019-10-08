@@ -32,7 +32,7 @@
         //8. Adding a method to an object
         employee.showVisitCard = () => {
             for ( let element in employee){
-                console.log(element);
+                console.log(`${element}: ${employee[element]}`);
             }
         };
         employee.showVisitCard();
@@ -47,21 +47,15 @@
 
         //10. Logging education into console
         for (let pty in employee.educations){
-             console.log(`${pty}: {gpa: ${employee['educations'][pty].gpa}, year: ${employee['educations'][pty].year}}`);
+            console.log(`${employee.name} graduated from ${pty} in ${employee['educations'][pty].year} with GPA of ${employee['educations'][pty].gpa}.`);
             };
 
         //11. Calculate the average of the gpa and logging it to console.
-        let totalSum = 0;
-        let number = 0;
-        for (let pty in employee.educations){
-            totalSum = employee['educations'][pty].gpa + totalSum;
-            number = number +1 ;
-           };
-        const averageGPA = totalSum/number;
+        const gpass = Object.keys(employee.educations).map(
+            key => employee.educations[key].gpa
+            );
+        const averageGPA = gpass.reduce((a,c) => a + c)/gpass.length
         console.log(`The average gpa is : ${averageGPA}`);
-
-
-
     </script>
 </body>
 </html>
