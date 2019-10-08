@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        const year = 2019;
+        const month = 10;
+        const day = 9;
+        const dayOfWeek = 2;
+
+        showDayName(dayOfWeek);
+
+        function showDayName(dayOfWeek) {
+            switch (dayOfWeek) {
+                case 1:
+                    console.log("Sunday");
+                    break;
+                case 2:
+                    console.log("Monday");
+                    break;
+                case 3:
+                    console.log("Tuesday");
+                    break;
+                case 4:
+                    console.log("Wednesday");
+                    break;
+                case 5:
+                    console.log("Thursday");
+                    break;
+                case 6:
+                    console.log("Friday");
+                    break;
+                case 7:
+                    console.log("Saturday");
+                    break;
+                default:
+                    console.log("Invalid date")
+                    break;
+            }
+
+        }
+        function convert2String(day) {
+
+            let convertedString;
+            if (day < 10) {
+                convertedString = '0' + day;
+                return convertedString;
+            } else {
+                return day;
+            }
+
+        }
+        function formatDate(year, month, day) {
+            day = convert2String(day);
+            month = convert2String(month);
+            let fullDate = year + '/' + month + '/' + day;
+            return fullDate;
+
+        }
+        function formatDateChristmas(year = 2020, month = 1, day = 1) {
+            day = convert2String(day);
+            month = convert2String(month);
+            let fullDate = year + '/' + month + '/' + day;
+            return fullDate;
+        }
+        const nextYear = function (year) {
+            return year + 1;
+        }
+        console.log(formatDate(nextYear(2019), month, day));
+        const formatDateConcised = (year, month, day) => year + '/' + convert2String(month) + '/' + convert2String(day);
+        console.log(formatDateConcised(year, month, day));
+    </script>
+</body>
+
+</html>
