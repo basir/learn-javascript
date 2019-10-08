@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+</head>
+<body>
+    <script>
+         // 3. Creating an object
+        const student = {
+            id: 3420182,
+            firstName: 'Oluwaseyi',
+            lastName: 'Onasami',
+            major: 'Electrical',
+            _gpa: 4.45 ,
+            show() {
+                console.log(`Name: ${this.firstName} ${this.lastName} (ID: ${this.id}) Major: ${this.major} GPA: ${this.gpa}`);
+                }
+            };
+            student.show(); 
+        // 4. getter method
+        const student = {
+            id: 3420182,
+            firstName: 'Oluwaseyi',
+            lastName: 'Onasami',
+            major: 'Electrical',
+            _gpa: 4.45 ,
+            show() {
+                console.log(`Name: ${this.firstName} ${this.lastName} (ID: ${this.id}) Major: ${this.major} GPA: ${this.gpa}`);
+                },
+            get fullName(){
+            if(this.firstName === ''){
+                return `Mr/Ms. ${this.lastName}`;
+                } else {
+                    return `${this.firstName} ${this.lastName}`;
+                    }
+                }
+            }
+            console.log(student.fullName); 
+
+            // 5. Setter Method
+            const student = {
+            id: 3420182,
+            firstName: 'Oluwaseyi',
+            lastName: 'Onasami',
+            major: 'Electrical',
+            _gpa: 4.45 ,
+            show() {
+                console.log(`Name: ${this.firstName} ${this.lastName} (ID: ${this.id}) Major: ${this.major} GPA: ${this.gpa}`);
+                },
+            get fullName(){
+            if(this.firstName === ''){
+                return `Mr/Ms. ${this.lastName}`;
+                } else {
+                    return `${this.firstName} ${this.lastName}`;
+                    }
+                },
+            set gpa(newGPA){
+            if (newGPA < 0 || newGPA > 4){
+                console.log('Error!');
+                }else {
+                    this._gpa = newGPA;
+                    }
+                }
+            }
+            student.gpa = -3.24;
+            console.log(student._gpa); */
+
+            //6. Factory function
+            const courseFactory = (id,name,credit) => {
+                return{
+                    id,
+                    name,
+                    credit,
+                    show(){
+                    console.log(`Name:${this.name}, ID:${this.id}, Credit: ${this.credit}`);
+                    }
+                }
+            };
+
+            //7. Calling the factory function
+            let myCourse = courseFactory(1,'Math', 4);
+            myCourse.show();
+
+            //8. Property Validation
+            if (myCourse.teacher){
+                console.log('Teacher');
+                } else {
+                    console.log('No Teacher');
+                }
+            //9. Creating another object
+            const courseAddition = {
+                teacher: 'Dr Mark'}
+                ;
+            //10. Merging two objects using object.assign
+            myCourse = Object.assign(myCourse,courseAddition);
+
+            //11.
+            if (myCourse.teacher){
+                console.log('Teacher');
+                } else {
+                    console.log('No Teacher');
+                }
+
+            //12.
+            for(let items in myCourse){
+                console.log(`${items}: ${myCourse[items]}`);
+                }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
