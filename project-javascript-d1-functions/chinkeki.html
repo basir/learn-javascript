@@ -51,10 +51,7 @@
 
         }
         function formatDate(year, month, day) {
-            day = convert2String(day);
-            month = convert2String(month);
-            let fullDate = year + '/' + month + '/' + day;
-            return fullDate;
+            return year + '/' + convert2String(month) + '/' + convert2String(day);
 
         }
         function formatDateChristmas(year = 2020, month = 1, day = 1) {
