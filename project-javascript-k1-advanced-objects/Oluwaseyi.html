@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+</head>
+<body>
+    <script>
+         // 3. Creating an object
+        const student = {
+            id: 3420182,
+            firstName: 'Oluwaseyi',
+            lastName: 'Onasami',
+            major: 'Electrical',
+            _gpa: 4.45 ,
+            show(){
+                console.log(`Name: ${this.firstName} ${this.lastName} (ID: ${this.id}) Major: ${this.major} GPA: ${this.gpa}`);
+                },
+        // 4. getter method
+            get fullName(){
+            if(this.firstName === ''){
+                return `Mr/Ms. ${this.lastName}`;
+                } else {
+                    return `${this.firstName} ${this.lastName}`;
+                    }
+                },
+         //5. Setter Method
+            set gpa(newGPA){
+            if (newGPA < 0 || newGPA > 4){
+                console.log('Error!');
+                }else {
+                    this._gpa = newGPA;
+                    }
+                }
+            };
+            student.show();
+            console.log(student.fullName);
+            student.gpa = -3.24;
+            console.log(student._gpa);
+
+            //6. Factory function
+            const courseFactory = (id,name,credit) => {
+                return{
+                    id,
+                    name,
+                    credit,
+                    show(){console.log(`Name:${this.name}, ID:${this.id}, Credit: ${this.credit}`);}
+                }
+            };
+
+            //7. Calling the factory function
+            let myCourse = courseFactory(1,'Math', 4);
+            myCourse.show();
+
+            //8. Property Validation
+            if (myCourse.hasOwnProperty('teacher')){
+                console.log('Teacher');
+                } else {
+                    console.log('No Teacher');
+                }
+            //console.log(Object.keys(myCourse).map(s => {{myCourse[s]}}))
+            //9 & 10. Creating another object and merging into 'myCourse' object
+            const courseAddition = Object.assign({}, myCourse,{teacher: 'Dr Mark'});
+
+            //11. Property validation after property insertion
+            if (courseAddition.hasOwnProperty('teacher')){
+                console.log('Teacher');
+                } else {
+                    console.log('No Teacher');
+                }
+            //12.
+            console.log(Object.keys(myCourse).map(items => { return `${items}: ${myCourse[items]}`;}));
+
+    </script>
+</body>
+</html>
