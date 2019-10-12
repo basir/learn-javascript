@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Light</title>
+</head>
+<body>
+    <script>
+        //3. Create a class
+        class TrafficLight {
+            constructor(color, address){
+                this._color = color;  //4. Adding property to the class.
+                this._address = address;
+                }
+            get getColor() {          //6. Adding a getter method 'getColor'
+                return this._color;
+                }
+            canGo() {               //7. Adding a method 'canGo'
+                if(this._color === 'green'){
+                    return true;
+                    } else {
+                        return false;
+                        }
+                }
+            }
+        const myTL = new TrafficLight('red','Avenue 1'); //5. Creating an instance
+        console.log(myTL.getColor);
+        console.log(myTL.canGo());
+
+        //8. Creating a sub class from the parent class 'Traffic Light'
+        class VIPTrafficLight extends TrafficLight {
+            constructor(color, address, specialEffects){
+                super(color, address);
+                this._specialEffects = specialEffects; //9. adding another field 'specialEffects'
+                }
+            getSpecialEffects() {                   //11. Adding method getSpecialEffects
+                return this._specialEffects;
+                }
+            set setSpecialEffects(effect){         //12. Adding a setter method
+                if (effect === 'dotted' || effect === 'solid' || effect === 'dashed'){
+                    this._specialEffects = effect;
+                    } else {
+                        console.log('No valid effect');
+                        }
+                    }
+            }
+        //10. Creating an instance from a the class 'VIPtrafficlight'
+        const myVIP = new VIPTrafficLight('green','Avenue 1','dotted')
+        console.log(myVIP.getSpecialEffects());
+        myVIP.setSpecialEffects = 'underline';
+        console.log(myVIP._specialEffects);
+    </script>
+</body>
+</html>
