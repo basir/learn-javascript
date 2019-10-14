@@ -135,7 +135,7 @@
 
 ## ADVANCED OBJECTS
 
-Wil be soon
+[Project I1 Student](project-javascript-k1-advanced-objects)
 
 - The this Keyword
 - Arrow Functions and this
@@ -149,7 +149,7 @@ Wil be soon
 
 ## CLASSES
 
-Wil be soon
+[Project I1 Traffic Light](project-javascript-l1-classes)
 
 - Constructor
 - Instance
@@ -164,7 +164,7 @@ Wil be soon
 
 ## BROWSER COMPATIBILITY AND TRANSPILATION
 
-Wil be soon
+[Project M1 Computer Platform Name](project-javascript-m1-browser-transpilations)
 
 - Finding browser compatibility
 - Why ES6?

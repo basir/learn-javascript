@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+
+        const color = "blue";
+        //color is declared as a global variable, it can be used by all the code blocks within this program
+
+        function logColor1() {
+            return console.log(color);
+        }
+        logColor1();
+        //logColor1 has access to color variable because it has a global scope
+
+        function logColor2(color) {
+            return console.log(color);
+        }
+        logColor2('red');
+        //logColor2 also has access to color variable because it has a global scope
+        //colors value is changed within the logcolor2 function block but retains its values outside the block
+
+        function logColor3(color) {
+            if (color === 'green') {
+                let color = "light green"; // color is only accessible within the If statement. it has block scope
+                return console.log(color);
+            }
+            return console.log(color);// executes if color isn't equal to green
+        }
+        logColor3('green');
+
+    </script>
+</body>
+
+</html>

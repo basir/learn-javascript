@@ -4,7 +4,7 @@ To code this project you need to know:
 
 If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
-## Project Title: ???
+## Project Title: Traffic Light
 
 1. Create a html file with your name like john.html
 2. Add current code to that file:
