@@ -135,7 +135,7 @@
 
 ## ADVANCED OBJECTS
 
-Wil be soon
+Will be soon
 
 - The this Keyword
 - Arrow Functions and this
@@ -149,7 +149,7 @@ Wil be soon
 
 ## CLASSES
 
-Wil be soon
+Will be soon
 
 - Constructor
 - Instance
@@ -164,7 +164,7 @@ Wil be soon
 
 ## BROWSER COMPATIBILITY AND TRANSPILATION
 
-Wil be soon
+Will be soon
 
 - Finding browser compatibility
 - Why ES6?
@@ -177,7 +177,7 @@ Wil be soon
 
 ## MODULES
 
-Wil be soon
+Will be soon
 
 - Hello Modules
 - Module.exports I
@@ -196,7 +196,7 @@ Wil be soon
 
 ## PROMISES
 
-Wil be soon
+Will be soon
 
 - What is a Promise?
 - Constructing a Promise Object
@@ -210,7 +210,7 @@ Wil be soon
 
 ## ASYNC AWAIT
 
-Wil be soon
+Will be soon
 
 - The async Keyword
 - Writing async Functions
@@ -221,7 +221,7 @@ Wil be soon
 
 ## REQUESTS
 
-Wil be soon
+Will be soon
 
 - HTTP Requests
 - XHR GET Requests
@@ -236,7 +236,7 @@ Wil be soon
 
 ## THE SCRIPT ELEMENT
 
-Wil be soon
+Will be soon
 
 - The <script> tag
 - The src attribute
@@ -246,7 +246,7 @@ Wil be soon
 
 ## DOCUMENT OBJECT MODEL
 
-Wil be soon
+Will be soon
 
 - The DOM as a Tree Structure
 - Parent Child Relationships in the DOM
@@ -255,7 +255,7 @@ Wil be soon
 
 ## JAVASCRIPT AND THE DOM
 
-Wil be soon
+Will be soon
 
 - The document keyword
 - Tweak an Element
@@ -268,7 +268,7 @@ Wil be soon
 
 ## DOM EVENTS
 
-Wil be soon
+Will be soon
 
 - What is an Event?
 - "Firing" Events

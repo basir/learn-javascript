@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      const color = 'blue';
+
+      const logColor1 = () => {
+        console.log(color);
+      };
+
+      const logColor2 = color => {
+        console.log(color);
+      };
+
+      const logColor3 = color => {
+        if (color === 'green') {
+          let color = 'light green';
+          console.log(color);
+        }
+        console.log(color);
+      };
+
+      logColor1();
+      logColor2('red');
+      logColor3('green');
+
+      // ANALYSIS
+      // The color variable has a global scope, thus it can be accessed by the different logColor functions. However, the color variable declared and assigned "light green" in the logColor3 function has the local scope of it's function. Therefore, it cannot be accessed by the other logger functions.
+    </script>
+  </body>
+</html>

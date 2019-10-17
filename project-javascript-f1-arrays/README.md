@@ -12,7 +12,7 @@
 - Nested Arrays
 - Review Arrays
 
-If you are not familier with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Shoes Shop
 
@@ -35,7 +35,7 @@ If you are not familier with them please download Learn JavaScript eBook at http
 - Casual Shoes
 - Sneakers
 - Sandals
-- Boat shoes
+- Boat Shoes
 - Dress Shoes
 
 4. Log first item and last item into console. For last item use `length` property.
@@ -46,4 +46,4 @@ If you are not familier with them please download Learn JavaScript eBook at http
 
 7. Remove last 3 item of array and log last item into console.
 
-8. Create a function named `showLength` that accept an array and log the length of array into console.
+8. Create a function named `showLength` that accepts an array and logs the length of array into console.
