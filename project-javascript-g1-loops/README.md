@@ -30,7 +30,7 @@ If you are not familier with them please download Learn JavaScript eBook from ht
 ```
 
 3. Create a for loop and log odd numbers from 1 to 11:
-4. Create a for loop and log event numbers from 11 to 1 in reverse:
+4. Create a for loop and log even numbers from 11 to 1 in reverse:
 5. Define an array named `myList` and put these items into it:
 
 - Fruits
