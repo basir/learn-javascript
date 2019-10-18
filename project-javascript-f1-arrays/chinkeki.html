@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let shoes = ['Casual Shoes', 'Sneakers', 'Sandals', 'Boat shoes', 'Dress Shoes'];
+        console.log(`${shoes[0]}, ${shoes[shoes.length - 1]}`);
+        shoes[4] = 'Derby shoes';
+        console.log(shoes.length - 1);
+        shoes.push('Espadrilles');
+        console.log(`${shoes[shoes.length - 1]}`);
+        shoes.pop();
+        shoes.pop();
+        shoes.pop();
+        console.log(shoes[shoes.length - 1]);
+        function showLength(shoes) {
+            return console.log(shoes.length)
+        }
+        showLength(shoes);
+    </script>
+</body>
+
+</html>

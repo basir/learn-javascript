@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      let annualCost,
+        inflationRate,
+        yearsUntilCollege,
+        annualSaving,
+        totalCost,
+        amount;
+
+      (inflationRate = 0.05),
+        (annualCost = 35000),
+        (yearsUntilCollege = 5),
+        (totalCost = 0);
+
+      amount = inflationRate * annualCost + annualCost;
+      totalCost = totalCost + annualCost;
+      amount = inflationRate * 2 * annualCost + annualCost;
+      totalCost = totalCost + annualCost;
+      amount = inflationRate * 3 * annualCost + annualCost;
+      totalCost = totalCost + annualCost;
+      amount = inflationRate * 4 * annualCost + annualCost;
+      totalCost = totalCost + annualCost;
+
+      annualSaving = totalCost / 5;
+      console.log(
+        `For a 4 years college degree with annual cost: ${annualCost} and Inflation rate: ${inflationRate}, you have to pay ${totalCost}.`
+      );
+      console.log(
+        `You need to save ${annualSaving} annually for ${yearsUntilCollege} years.`
+      );
+    </script>
+  </body>
+</html>

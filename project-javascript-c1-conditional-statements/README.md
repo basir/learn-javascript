@@ -2,13 +2,13 @@
 
 In this project you need to know :
 The if keyword,
-If...Else Statements Comparison Operators Logical Operators,
-Truthy and Falsy,
-Truthy and Falsy Assignment Ternary Operator,
-Else If Statements,
+if...else statements comparison operators logical operators,
+Truthy and falsy,
+Truthy and falsy assignment ternary operator,
+Else if statements,
 The switch keyword
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Dog Food Recommender
 
@@ -43,7 +43,7 @@ Height is number.
 
 5. Define variables for dog breed:
 
-- Bread: Affenpinscher
+- Breed: Affenpinscher
 
 6. Recommend Dog Food based on dog breed:
 

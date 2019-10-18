@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      const shoes = [
+        'Casual Shoes',
+        'Sneakers',
+        'Sandals',
+        'Boat Shoes',
+        'Dress Shoes'
+      ];
+
+      console.log(shoes);
+
+      // Logging the first and last item to the console
+      console.log(shoes[0]);
+      console.log(shoes[shoes.length - 1]);
+
+      // Changing the last item to "Derby Shoes"
+      shoes[shoes.length - 1] = 'Derby Shoes';
+      console.log(shoes[shoes.length - 1]);
+
+      // Adding `Espadrilles` to the array and logging the last item to console.
+      shoes.push('Espadrilles');
+      console.log(shoes[shoes.length - 1]);
+      console.log(shoes);
+
+      // Removing last 3 items of the array and logging the last item into console.
+      shoes.pop();
+      shoes.pop();
+      shoes.pop();
+      console.log(shoes[shoes.length - 1]);
+
+      // Creating a function named `showLength` that accepts an array and logs the length of array to console.
+      const showLength = array => {
+        console.log(array.length);
+      };
+
+      showLength(shoes);
+    </script>
+  </body>
+</html>
