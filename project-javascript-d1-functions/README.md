@@ -10,7 +10,7 @@
 - Arrow Functions
 - Concise Body Arrow Functions
 
-If you are not familier with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Date Formatter
 
@@ -40,11 +40,11 @@ All variables are number.
 
 4. Declare a function named `showDayName` that get dayOfWeek (number) and log day name into the console. For example it gets `1` and log `Sunday`, `2` and log `Monday`, etc.
 
-5. Declare a function named `convert2String` that convert a number to string. If number is less that 10, it puts a 0 befor it. Example: `2` => `'02'`
+5. Declare a function named `convert2String` that converts a number to string. If number is less that 10, it puts a 0 before it. Example: `2` => `02`
 
-6. Declare a function named `formatDate` with 3 parameters (`year`, `month`, `day`) and return a string with this format `yyy/mm/dd`. Note: Use `convert2String` function from previous step.
+6. Declare a function named `formatDate` with 3 parameters (`year`, `month`, `day`) and return a string with this format `yyyy/mm/dd`. Note: Use `convert2String` function from previous step.
 
-7. Declare a function named `formatDateChristmas` with 3 parameters (`year`, `month`, `day`) and return a the result of `formatDate` function from pervious step. Use default parameters to show `2020/01/01` if this function is called without parameters.
+7. Declare a function named `formatDateChristmas` with 3 parameters (`year`, `month`, `day`) and return a the result of `formatDate` function from previous step. Use default parameters to show `2020/01/01` if this function is called without parameters.
 
 8. Declare a function expression named `nextYear` that get a year and return next year. Call `formatDate` with `nextYear(year)` as first parameter and `month` and `day` for next 2 parameters.
 

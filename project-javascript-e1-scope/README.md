@@ -6,7 +6,7 @@
 - Scope Pollution
 - Practice Good Scoping
 
-If you are not familier with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Color Picker
 
@@ -26,13 +26,13 @@ If you are not familier with them please download Learn JavaScript eBook at http
 
 3. Define a global variable named `color` with `const` and set it to `blue`
 
-4. Declare a function named `logColor1` without parameter and log `color` varibale into console.
+4. Declare a function named `logColor1` without parameter and log `color` variable into console.
 
-5. Declare a function named `logColor2` with a parameter named `color` and log `color` varibale into console.
+5. Declare a function named `logColor2` with a parameter named `color` and log `color` variable into console.
 
 6. Call function `logColor2` with `'red'` as argument and check the result.
 
-7. Declare a function named `logColor3` with a parameter named `color` and log `color` varibale into console.
+7. Declare a function named `logColor3` with a parameter named `color` and log `color` variable into console.
 
 8. In this function, add an if statement before `console.log` that check `color` is green. If it is green use `let` to define a variable named `color` and set it `light green`, then `console.log(color)`
 

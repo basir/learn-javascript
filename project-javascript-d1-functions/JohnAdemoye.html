@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      let year, month, day, dayOfWeek;
+
+      (year = 2019), (month = 10), (day = 9), (dayOfWeek = 2);
+
+      function showDayName(dayOfWeek) {
+        switch (dayOfWeek) {
+          case 1:
+            console.log('Sunday');
+            break;
+          case 2:
+            console.log('Monday');
+            break;
+          case 3:
+            console.log('Tuesday');
+            break;
+          case 4:
+            console.log('Thursday');
+            break;
+          case 5:
+            console.log('Friday');
+            break;
+          case 6:
+            console.log('Saturday');
+            break;
+          default:
+            break;
+        }
+      }
+
+      showDayName(dayOfWeek);
+
+      function convert2String(dayNumber) {
+        let formattedDated;
+
+        if (dayNumber < 10) {
+          formattedDated = '0' + dayNumber;
+          return formattedDated;
+        }
+
+        return dayNumber;
+      }
+
+      function formatDate(year, month, day) {
+        return year + '/' + convert2String(month) + '/' + convert2String(day);
+      }
+
+      function formatDataChristmas(year = 2020, month = 01, day = 01) {
+        return formatDate(year, month, day);
+      }
+ 
+      function nextYear(year) {
+        return year + 1;
+      }
+
+      console.log(formatDate(nextYear(year), month, day));
+
+      const formatDateConcised = (year, month, day) =>
+        year + '/' + convert2String(month) + '/' + convert2String(day);
+
+      console.log(formatDateConcised(year, month, day));
+    </script>
+  </body>
+</html>
