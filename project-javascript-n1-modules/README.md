@@ -2,23 +2,20 @@
 
 To code this project you need to know:
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
-## Project Title: ???
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
-1. Create a html file with your name like john.html
-2. Add current code to that file:
+## Project Title: Resturant Menu
 
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <script>
-      // your code here
-    </script>
-  </body>
-</html>
-```
+1. Copy and Paste your folder from  project M1 here
+
+2. You have this folder structure
+
+- your-name
+- - src
+- - prod
+
+3. 
 
 ## How to deliver this project
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+</head>
+<body>
+    <script>
+        //3. Loop for logging odd numbers from 1 to 11;
+        for (let i=1; i<12; i++){
+            if (i%2 !== 0){
+                console.log(i);
+                }
+        }
+
+        //4. Loop for logging even numbers from 11 to 1;
+        for ( let j=11; j>0; j--){
+            if(j%2 ===0){
+                console.log(j);
+                }
+        }
+
+        //5. Logging the array items using for loop.
+        const myList = ['Fruits','Milk','Cheese','Baken','Bread'];
+        for (let k=0; k < myList.length; k++){
+            console.log(' - ' + myList[k]);
+            }
+
+        //6. Nested Loop
+        const fruits = [['apple','orange','banana'],['coconut','cumbersome'],['starbery','bluebery']];
+        for (let p = 0; p < fruits.length; p++){
+            for(let n=0; n< fruits[p].length; n++){
+                console.log(' - ' + fruits[p][n]);
+            }
+        }
+
+        //7. While Loop
+        let counter = myList.length-1;
+        while (counter > -1){
+            console.log(' - ' + myList[counter]);
+            counter--;
+            }
+    </script>
+
+</body>
+</html>
