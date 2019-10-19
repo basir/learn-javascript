@@ -4,10 +4,12 @@
     <script>
       // your code here
 
+      // 3
       let year, month, day, dayOfWeek;
 
       (year = 2019), (month = 10), (day = 9), (dayOfWeek = 2);
 
+      // 4
       function showDayName(dayOfWeek) {
         switch (dayOfWeek) {
           case 1:
@@ -35,6 +37,7 @@
 
       showDayName(dayOfWeek);
 
+      // 5
       function convert2String(dayNumber) {
         let formattedDated;
 
@@ -46,20 +49,24 @@
         return dayNumber;
       }
 
+      // 6
       function formatDate(year, month, day) {
         return year + '/' + convert2String(month) + '/' + convert2String(day);
       }
 
+      // 7
       function formatDataChristmas(year = 2020, month = 01, day = 01) {
         return formatDate(year, month, day);
       }
- 
+
+      // 8
       function nextYear(year) {
         return year + 1;
       }
 
       console.log(formatDate(nextYear(year), month, day));
 
+      // 9
       const formatDateConcised = (year, month, day) =>
         year + '/' + convert2String(month) + '/' + convert2String(day);
 

@@ -10,7 +10,7 @@ Creating Object Literals
 , Pass By Reference
 , Looping Through Objects
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Employee
 
@@ -28,7 +28,7 @@ If you are not familier with them please download Learn JavaScript eBook from ht
 </html>
 ```
 
-3. Create an `employee` object with Object Literals at define 3 field for `name`, `age`, and `department` and set values for them.
+3. Create an `employee` object with Object Literals and define 3 fields for `name`, `age`, and `department` and set values for them.
 
 4. Log them into console like this message:
    "Employee Info: Name: `name`, Age: `age`, Department: `department`"
@@ -36,9 +36,9 @@ If you are not familier with them please download Learn JavaScript eBook from ht
 5. Add a new property to `employee` for `phone number` and set it to `00123456789`. then log it into console like this:
    "Employee `name` number is `phone number`".
 
-   Note: Use braket notation for `phone number`
+   Note: Use bracket notation for `phone number`
 
-6. Define a function name `getPropValue` that get a object and a property and return value of the property in that object.
+6. Define a function name `getPropValue` that gets a object and a property and returns value of the property in that object.
 
 7. Use this function to log `name` and `phone number` into console.
 

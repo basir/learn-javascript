@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const student = {
+        id: 12345,
+        firstName: 'John',
+        lastName: 'Doe',
+        major: 'Biotechnology',
+        gpa: 4.0,
+
+        show: () => {
+          console.log(
+            `Name: ${this.firstName} ${this.lastName} ID:${this.id} Major: ${this.major} GPA: ${this.gpa}`
+          );
+        },
+
+        // 4
+        get fullName() {
+          if (!this.firstName) {
+            return `Mr/Mrs ${this.lastName}`;
+          }
+          return `Mr/Mrs ${this.firstName} ${this.lastName}`;
+        },
+
+        // 5
+        set gpa(gpa) {
+          if (gpa < 0 || gpa > 4) {
+            console.log('Error!');
+            break;
+          }
+          this.gpa = gpa
+        },
+
+      };
+
+      // 6
+      const courseFactory = (id, name, credit) => {
+            return {
+                  id,
+                  name,
+                  credit,
+                  show() {
+                        console.log(`Name:${this.name}, ID:${this.id}, Credit:${this.credit}`);
+                  }
+            }
+        }
+
+      // 7
+      const myCourse = courseFactory(1, "Math", 3)
+      console.log(myCourse.show())
+
+      // 8
+      myCourse.hasOwnProperty("teacher") ? console.log("Teacher!") : console.log("No teacher!");
+
+      // 9
+      const courseAddition = {teacher: "Dr Mark"};
+
+      // 10
+      Object.assign(myCourse, courseAddition)
+
+      // 11
+      myCourse.hasOwnProperty("teacher") ? console.log("Teacher!") : console.log("No teacher!");
+
+      // 12
+      console.log(Object.keys(myCourse)); // Fields
+      console.log(Object.keys(myCourse).map(item => myCourse[item])); // Values
+    </script>
+  </body>
+</html>

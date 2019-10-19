@@ -4,37 +4,43 @@
     <script>
       // your code here
 
-      // Creating a for loop and log odd numbers from 1 to 11:
+      // 3
       for (let index = 1; index < 12; index++) {
         if (index % 2 === 1) {
           console.log(index);
         }
       }
 
+      // 4
       for (let index = 11; index > 0; index--) {
         if (index % 2 === 0) {
           console.log(index);
         }
       }
 
+      // 5
       const myList = ['Fruits', 'Milk', 'Cheese', 'Baken', 'Bread'];
 
+      // 6
       for (let index = 0; index < myList.length; index++) {
         console.log(myList[index]);
       }
 
+      // 7
       const fruits = [
         ['apple', 'orange', 'banana'],
         ['coconut', 'cumbersome'],
         ['starbery', 'bluebery']
       ];
 
+      // 8
       for (let index = 0; index < fruits.length; index++) {
         for (let index2 = 0; index2 < fruits[index].length; index2++) {
           console.log(fruits[index][index2]);
         }
       }
 
+      // 9
       let counter = myList.length - 1;
       do {
         console.log(myList[counter]);

@@ -39,10 +39,10 @@ If you are not familier with them please download Learn JavaScript eBook from ht
 - Baken
 - Bread
 
-4. Log all item in the array into console with a for loop.
+6. Log all item in the array into console with a for loop.
 
-5. Create new array named `fruits` and set it to`[['apple','orange','banana],['coconut','cumbersome'],['starbery','bluebery']]`
+7. Create new array named `fruits` and set it to`[['apple','orange','banana],['coconut','cumbersome'],['starbery','bluebery']]`
 
-6. Create nested for loops to log all items inside `fruits` in seperate lines.
+8. Create nested for loops to log all items inside `fruits` in seperate lines.
 
-7. Use do while to log `myList` items in reverse mode. First log `Bread`, then `Baken` , etc
+9. Use do while to log `myList` items in reverse mode. First log `Bread`, then `Baken` , etc

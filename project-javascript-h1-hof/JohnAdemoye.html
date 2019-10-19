@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const repeat = (func, param, times) => {
+        for (let index = 0; index < times; index++) {
+          func(param);
+          console.log('Run number: ' + index);
+        }
+      };
+
+      // 4
+      const repeatDuration = (repeat, times, func, param) => {
+        const start = new Date();
+        repeat(func, param, times);
+        const end = new Date();
+        console.log(`Running time is ${end - start}ms`);
+      };
+
+      // 5
+      const factorial = num => {
+        num > 1 ? num * factorial(num - 1) : 1;
+        console.log(num);
+      };
+
+      // 6
+      repeatDuration(repeat, 1000, factorial, 20);
+    </script>
+  </body>
+</html>
