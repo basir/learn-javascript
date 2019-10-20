@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Cost Calculator</title>
+</head>
+  <body>
+  	
+
+    <script>
+      // your code here
+      	
+      	let annualCost = 35000;
+        const inflationRate = 0.05;     
+        let yearsUntilCollege = 5;
+
+        let totalCost;
+        totalCost = 
+        annualCost +
+        annualCost + inflationRate * annualCost +
+        annualCost + inflationRate * 2 * annualCost +
+        annualCost + inflationRate * 3 * annualCost ;
+
+        const annualSaving = totalCost / 5;
+        console.log(`For a 4 years college degree with Annual cost: $${annualCost} and Inflation rate: ${inflationRate}`);
+        console.log(`You have to pay $${totalCost}.`);
+        console.log(`You need to save ${annualSaving} annually for ${yearsUntilCollege} years.`)
+
+       
+       
+    </script>
+  </body>
+</html>
