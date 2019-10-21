@@ -2,12 +2,11 @@
 
 To code this project you need to know:
 
-
 If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Resturant Menu
 
-1. Copy and Paste your folder from  project M1 here
+1. Copy and Paste your folder from project M1 here
 
 2. You have this folder structure
 
@@ -20,20 +19,21 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
 4. Define array `food` there and enter these items there:
 
 ```
-Saffron.  
-Kale.  
-Clementine. 
-Peaches.  
-Nori.  
-Kobe.  
-Olive.  
+Saffron.
+Kale.
+Clementine.
+Peaches.
+Nori.
+Kobe.
+Olive.
 Rosemary.
 ```
-5. export it using `module.exports`
 
-6. Edit src/index.js to require `food.js` module and print foods into console.
+5. Export it as `food`
 
-7. Add function `getSpecials` to `food.js` to filter foods that start with `K` or end with `e` or at least have one `r` in their name.
+6. Edit src/index.js to require `food.js` module and print `food` into console.
+
+7. Export a function named `getSpecials` in `food.js` to filter foods that start with `N` or end with `e` or at least have one `r` in their name.
 
 8. Use that function in the `src/index.js` and log into console.
 
@@ -52,8 +52,6 @@ Rosemary.
 15. This function return an arrays of 3 vegeterian foods.
 
 16. Use this named export in `src/index.js` and log foods into console.
-
-
 
 ## How to deliver this project
 
