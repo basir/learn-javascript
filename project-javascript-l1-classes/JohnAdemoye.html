@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3/4
+      class TrafficLight {
+        constructor(color, address) {
+          this.color = color;
+          this.address = address;
+        }
+
+        // 6
+        get getColor() {
+          console.log(this.color);
+        }
+        set setColor(color) {
+          this.color = color;
+        }
+
+        // 7
+        canGo() {
+          if (this.color === 'green') {
+            return true;
+          }
+          return false;
+        }
+      }
+
+      // 5
+      const myTL = new TrafficLight('red', 'Avenue 1');
+
+      // 8/9
+      class VIPTrafficLight extends TrafficLight {
+        constructor(SpecialEffects) {
+          super(SpecialEffects)
+          this.SpecialEffects = SpecialEffects;
+        }
+
+        // 11
+        get getSpecialEffects() {
+          return this.SpecialEffects;
+        }
+
+        // 12
+        set setSpecialEffects(SpecialEffects) {
+          if (
+            SpecialEffects !== 'dotted' ||
+            SpecialEffects !== 'solid' ||
+            SpecialEffects !== 'dashed'
+          ) {
+                console.log("No valid effect!");
+                break;
+          } else {
+            this.SpecialEffects = SpecialEffects;
+          }
+        }
+      }
+
+      // 10
+      const myVIP = new VIPTrafficLight('dotted');
+      console.log(myVIP.getSpecialEffects);
+    </script>
+  </body>
+</html>

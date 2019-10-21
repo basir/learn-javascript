@@ -2,7 +2,7 @@
 
 To code this project you need to know:
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Traffic Light
 
@@ -28,7 +28,7 @@ If you are not familier with them please download Learn JavaScript eBook from ht
 
 6. Add a method named `getColor` to get `color` and call with console.log to show into console.
 
-7. Add a method name `canGo` that check color and if it is `green` return true, else false.
+7. Add a method name `canGo` that checks color and if it is `green` returns true, else false.
 
 8. Create class named `VIPTrafficLight` inherits from `TrafficLight`
 

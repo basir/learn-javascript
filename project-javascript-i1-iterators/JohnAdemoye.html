@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const actions = [
+        'rest and refresh',
+        'connect with others',
+        'take time to enjoy',
+        'share interests',
+        'contribute to community',
+        'take care of yourself',
+        'challenge yourself',
+        'reduce your stress',
+        'notice the here and now',
+        'ask for help'
+      ];
+
+      // 4
+      for (let index = 0; index < actions.length; index++) {
+        console.log(actions[index]);
+      }
+
+      // 5
+      actions.forEach(action => console.log(action));
+
+      // 6
+      actions.map(
+        (action, index) => `${console.log('%i : %s', index, action)}`
+      );
+      actions.forEach(action => console.log(action));
+
+      // 7
+      actions
+        .filter(action => action.startsWith('c'))
+        .map((action, index) => console.log('%i : %s', index, action));
+
+      actions
+        .filter(action => action.startsWith('c'))
+        .forEach((action, index) => console.log('%i : %s', index, action));
+
+      // 8
+      const actionLetters = actions.map(
+        action => action.replace(/\s/g, '').length
+      );
+      console.log(actionLetters);
+
+      // 9
+      const sumOfLetters = actionLetters.reduce((a, b) => a + b, 0);
+      console.log(sumOfLetters);
+
+      // 10
+      const itemLessThanTen = actionLetters.findIndex(
+        sumOfLetter => sumOfLetter < 10
+      );
+      console.log(itemLessThanTen); // None
+    </script>
+  </body>
+</html>

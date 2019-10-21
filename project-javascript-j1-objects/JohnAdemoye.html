@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const employee = {
+        name: 'John',
+        age: 33,
+        department: 'Biotechnology'
+      };
+
+      // 4
+      console.log(
+        `Employee Info:\n Name: ${employee.name}; Age: ${employee.age}; Department: ${employee.department}`
+      );
+
+      // 5
+      employee['phone number'] = '00123456789';
+      console.log(
+        `Employee ${employee.name}'s number is ${employee['phone number']}`
+      );
+
+      // 6
+      const getPropValue = (object, property) => object[property];
+
+      // 7
+      console.log(getPropValue(employee, 'name'));
+      console.log(getPropValue(employee, 'phone number'));
+
+      // 8
+      employee['showVisitCard'] = () => console.log(employee);
+      employee.showVisitCard();
+
+      // 9
+      employee.educations = {
+        universtiy1: { gpa: 3.5, year: 2019 },
+        universtiy2: { gpa: 4.0, year: 2015 },
+        universtiy3: { gpa: 3.75, year: 2010 },
+        universtiy4: { gpa: 3.0, year: 2005 }
+      };
+
+      // 10
+      for (university in employee.educations) {
+        console.log(university);
+      }
+
+      // 11
+      const gpas = Object.keys(employee.educations).map(
+        item => employee.educations[item].gpa
+      );
+
+      const totalGpas = gpas.reduce((a, b) => a + b);
+      console.log(`Average of gpas is ${totalGpas / gpas.length}.`);
+    </script>
+  </body>
+</html>

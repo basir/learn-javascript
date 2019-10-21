@@ -2,7 +2,7 @@
 
 To code this project you need to know:
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: ???
 
