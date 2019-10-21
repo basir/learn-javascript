@@ -177,7 +177,7 @@
 
 ## MODULES
 
-Wil be soon
+[Project N1 Food Menu](project-javascript-n1-modules)
 
 - Hello Modules
 - Module.exports I
@@ -196,7 +196,7 @@ Wil be soon
 
 ## PROMISES
 
-Wil be soon
+[Project O1 Washing Dishes](project-javascript-o1-promises)
 
 - What is a Promise?
 - Constructing a Promise Object
