@@ -32,11 +32,9 @@
         console.log('\nFruit list')
         let fruits = [['apple', 'orange', 'banana'], ['coconut', 'cumbersome'], ['starbery', 'bluebery']]
         for (let i = 0; i < fruits.length; i++) {
-            for (let j = 0; j < fruits.length; j++) {
-                if (fruits[i][j] != undefined) {
-                    console.log(fruits[i][j]);
+            for (let j = 0; j < fruits[i].length; j++) {
+                     console.log(fruits[i][j]);
                 }
-            }
         }
 
         //Use do while to log myList items in reverse mode
