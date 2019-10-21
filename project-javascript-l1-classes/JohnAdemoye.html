@@ -34,6 +34,7 @@
       // 8/9
       class VIPTrafficLight extends TrafficLight {
         constructor(SpecialEffects) {
+          super(SpecialEffects)
           this.SpecialEffects = SpecialEffects;
         }
 
@@ -58,7 +59,8 @@
       }
 
       // 10
-      const myVIP = VIPTrafficLight('dotted');
+      const myVIP = new VIPTrafficLight('dotted');
+      console.log(myVIP.getSpecialEffects);
     </script>
   </body>
 </html>

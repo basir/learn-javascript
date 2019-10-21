@@ -10,7 +10,7 @@ Finding browser compatibility
 , Babel Source Lib
 , Build
 
-If you are not familier with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
+If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Computer Platform Name
 
@@ -37,8 +37,8 @@ $ node src/index.js
 8. Write this code inside `index.js`
 
 ```javascript
-import os from "os";
-console.log("Platform: " + os.platform());
+import os from 'os';
+console.log('Platform: ' + os.platform());
 ```
 
 In this code we have used `import` command that isn't currently enabled in Node.js.
@@ -74,7 +74,7 @@ $ npm install babel-preset-env -D
 
 13. Run `npm run build`. This command runs `babel src -d prod` that convert javascript files inside `src` folder to ES5 version so that they can be run on Node.js.
 
-14. Run `npm run start`. This command runs `node prod/index.js` run the project and log your plateform name like `win32` into console.
+14. Run `npm run start`. This command runs `node prod/index.js` run the project and log your platform name like `win32` into console.
 
 15. Use this file and folder structure to code in modern javascript like ES6, ES7, ... .
 
