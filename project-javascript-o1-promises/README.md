@@ -21,11 +21,11 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
 </html>
 ```
 
-3. Create function `wash(resolve, reject)` and use `setTimeout` to impelements this logic after 1 second:
+3. Create function `wash(resolve, reject)` and use `setTimeout` to implements this logic after 1 second:
 
 - Declare `numDishes` and set it to a random integer number between 1 to 10.
-- If `numDishes<=7` then then log `"Wash: Pass"` and resolve with `numDishes` as parameter.
-- Else class reject with `"Wash: Fail"` value.
+- If `numDishes<=7` then log `Wash: Pass` and resolve with `numDishes` as parameter.
+- Else class reject with `Wash: Fail` value.
 
 4. Create a new promise with `wash` parameter.
 
@@ -33,7 +33,7 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
 
 6. In the `dry` function create a new promise and inside it use setTimeout with 2 seconds.
 
-7. Inside setTimeout check `numDishes` and if it is less then 3, then log `"Dry: Pass"` and resolve(numDishes), else reject with `"Dry: Fail"`
+7. Inside setTimeout check `numDishes` and if it is less then 3, then log `Dry: Pass` and resolve(numDishes), else reject with `Dry: Fail`
 
 8. Use `then` after previous then in step 5 and get `numDishes` and log `"Done " + numDishes + " Dishes."`
 

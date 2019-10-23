@@ -43,7 +43,7 @@ Rosemary.
 
 11. Add method `getAll` to show all items.
 
-12. Import this class in `src/index.js` and new an object and enter some menu items as parameter.
+12. Import this class in `src/index.js` and make a new object and enter some menu items as parameter.
 
 13. Print all menu items through `getAll` functions.
 

@@ -1,3 +1,4 @@
+// 4
 const food = [
   'Saffron',
   'Kale',
@@ -8,10 +9,12 @@ const food = [
   'Olive',
   'Rosemary'
 ];
+
+// 5
 exports.food = food;
 
-export function getSpecials() {
-  return food.filter(
-    food => food.startsWith('K') || food.endsWith('e') || food.indexOf('r') >= 0
+// 7
+export const getSpecials = () =>
+  food.filter(
+    food => food.startsWith('N') || food.endsWith('e') || food.includes('r')
   );
-}

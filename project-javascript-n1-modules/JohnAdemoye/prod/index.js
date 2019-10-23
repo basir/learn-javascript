@@ -1,11 +1,22 @@
 'use strict';
 
-var _os = require('os');
+var _food = require('./food');
 
-var _os2 = _interopRequireDefault(_os);
+var _menu = require('./menu');
+
+var _menu2 = _interopRequireDefault(_menu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log('Hello Node.js');
+// 6
+console.log(_food.food);
 
-console.log('Platform: ' + _os2.default.platform());
+// 8
+console.log((0, _food.getSpecials)());
+
+// 12
+var myMenu = new _menu2.default(['Saft', 'Pfirsich', 'Schokolade']);
+myMenu.getAll(); // 13
+
+// 14
+console.log((0, _menu.getVeg)());

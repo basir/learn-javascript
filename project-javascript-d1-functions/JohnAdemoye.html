@@ -51,7 +51,7 @@
 
       // 6
       function formatDate(year, month, day) {
-        return year + '/' + convert2String(month) + '/' + convert2String(day);
+        return `${year}/${convert2String(month)}/${convert2String(day)}`;
       }
 
       // 7
@@ -68,7 +68,7 @@
 
       // 9
       const formatDateConcised = (year, month, day) =>
-        year + '/' + convert2String(month) + '/' + convert2String(day);
+        `${year}/${convert2String(month)}/${convert2String(day)}`;
 
       console.log(formatDateConcised(year, month, day));
     </script>
