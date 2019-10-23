@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const wash = (resolve, reject) => {
+        setTimeout(function() {
+          let numDishes = Math.floor(Math.random() * 10) + 1;
+          if (numDishes <= 7) {
+            console.log('Wash: Pass');
+            resolve(numDishes);
+          } else {
+            reject('Wash: Fail');
+          }
+
+          // console.log('Value of numDishes is ' + numDishes);
+        }, 1000);
+      };
+
+      // 4
+      let myPromise = new Promise(wash);
+
+      myPromise
+        .then(numDishes => dry(numDishes)) // 5
+        .catch(numDishes => console.log(numDishes));
+
+      // 6
+      const dry = numDishes => {
+        let newPromise = new Promise((resolve, reject) => {
+          setTimeout(numDishes => {
+            // 7
+            if (numDishes < 3) {
+              console.log('Dry: Pass');
+              resolve(numDishes);
+            } else {
+              reject('Dry: Fail');
+            }
+          }, 2000);
+        })
+          .then(numDishes => console.log(`Done ${numDishes} dishes`)) // 8
+          .catch(error => console.log('Sorry: ' + error)); // 9
+      };
+    </script>
+  </body>
+</html>
