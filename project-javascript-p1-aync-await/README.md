@@ -4,7 +4,7 @@ To code this project you need to know:
 
 If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
-## Project Title: ???
+## Project Title: Smart House
 
 1. Create a html file with your name like john.html
 2. Add current code to that file:
@@ -19,6 +19,24 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
   </body>
 </html>
 ```
+
+3. When user press energySaving button of smart house remote control, we call these 3 functions sequentially:
+
+   - smartTurnOffLight()
+   - smartTurnOffAirConditioner()
+   - smartTturnOffWashingMachine()
+
+4. Create async function energySaving() and then call above 3 functions sequentially.
+
+5. function smartTurnOffLight is async and check a current time, if it is between 7am to 6pm it return `TurnOffLight Done` string after 3 seconds else throw exption `Failed to TurnOffLight` after 2 seconds.
+
+6. function smartTurnOffAirConditioner is async and check a current date, if it is summer it return `TurnOffAirConditioner Done` string after 1 seconds else throw exption `Failed to TurnOffAirConditioner` after 3 seconds.
+
+7. function smartTurnOffWashingMachine is async and check a current time, if it is between 8pm to 10pm it return `TurnOffWashingMachine Done` string after 1.5 seconds else throw exption `Failed to TurnOffWashingMachine` after 0.5 seconds.
+
+8. In energySaving function if all function run successfully console.log("Energy Saving is Off") else show errors.
+
+9. create energySavingConcurrent function and run all 3 functions concurrency. Log the result all functions into console.
 
 ## How to deliver this project
 
