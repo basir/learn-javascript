@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Washing Dishes</title>
+</head>
+<body>
+<script>
+ /* Create a function and implement its logic after 1sec. */
+const numDishes = Math.floor(Math.random()*10);
+setTimeout(wash = (resolve, reject) => {
+        if(numDishes <= 7 && numDishes > 0){
+            resolve(numDishes)
+            console.log('Wash: Pass');
+            }
+        else {reject('Wash: Fail')};
+                }, 1000);
+
+
+/* Create a new Promise with 'wash' parameter */
+const newPromise = new Promise(wash);
+
+/* Use .then() to get the number of dishes. */
+newPromise
+    .then(resolveValue => {
+        console.log('Number of Dishes: ' + resolveValue);
+        function dry(numDishes){
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(numDishes < 3 && numDishes > 0){
+                        resolve(numDishes)
+                        console.log('Dry: Pass');
+                        } else {
+                            console.log('Dry: Fail');
+                            reject('too many dishes in the dryer')
+                        }
+                    }, 2000);
+                })
+            }
+        dry(numDishes)
+            .then(resolvedValue => {
+                console.log("Done " + resolvedValue + " Dish(es).")})
+
+            .catch(returnedValue => {
+                console.log('Sorry, ' + returnedValue)});
+            })
+    .catch(rejectValue => {
+        console.log(rejectValue)});
+
+</script>
+</body>
+</html>
