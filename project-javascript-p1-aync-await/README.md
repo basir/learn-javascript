@@ -24,19 +24,19 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
 
    - smartTurnOffLight()
    - smartTurnOffAirConditioner()
-   - smartTturnOffWashingMachine()
+   - smartTurnOffWashingMachine()
 
 4. Create async function energySaving() and then call above 3 functions sequentially.
 
-5. function smartTurnOffLight is async and check a current time, if it is between 7am to 6pm it return `TurnOffLight Done` string after 3 seconds else throw exption `Failed to TurnOffLight` after 2 seconds.
+5. function smartTurnOffLight is async and check a current time, if it is between 7am to 6pm it return `TurnOffLight Done` string after 3 seconds else throw exception `Failed to TurnOffLight` after 2 seconds.
 
-6. function smartTurnOffAirConditioner is async and check a current date, if it is summer it return `TurnOffAirConditioner Done` string after 1 seconds else throw exption `Failed to TurnOffAirConditioner` after 3 seconds.
+6. function smartTurnOffAirConditioner is async and check a current date, if it is summer it return `TurnOffAirConditioner Done` string after 1 seconds else throw exception `Failed to TurnOffAirConditioner` after 3 seconds.
 
-7. function smartTurnOffWashingMachine is async and check a current time, if it is between 8pm to 10pm it return `TurnOffWashingMachine Done` string after 1.5 seconds else throw exption `Failed to TurnOffWashingMachine` after 0.5 seconds.
+7. function smartTurnOffWashingMachine is async and check a current time, if it is between 2pm to 5pm it return `TurnOffWashingMachine Done` string after 1.5 seconds else throw exception `Failed to TurnOffWashingMachine` after 0.5 seconds.
 
-8. In energySaving function if all function run successfully console.log("Energy Saving is Off") else show errors.
+8. In energySaving function if all functions run successfully console.log("Energy Saving is Off") else show errors.
 
-9. create energySavingConcurrent function and run all 3 functions concurrency. Log the result all functions into console.
+9. create energySavingConcurrent function and run all 3 functions concurrently. Log the result all functions into console.
 
 ## How to deliver this project
 

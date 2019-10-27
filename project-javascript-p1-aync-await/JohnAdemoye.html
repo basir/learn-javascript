@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      const today = new Date();
+      const hour = today.getHours();
+      const month = today.getMonth() + 1;
+
+      // console.log(hour, month);
+      // 5
+      const smartTurnOffLight = async () => {
+        return new Promise((resolve, reject) => {
+          if (hour >= 7 && hour <= 18) {
+            setTimeout(() => {
+              resolve('TurnOffLightDone');
+            }, 3000);
+          } else {
+            setTimeout(() => {
+              reject('Failed to TurnOffAirConditioner');
+            }, 2000);
+          }
+        });
+      };
+
+      // 6
+      const smartTurnOffAirConditioner = async () => {
+        return new Promise((resolve, reject) => {
+          if (month >= 6 && month <= 8) {
+            setTimeout(() => {
+              resolve(`TurnOffAirConditioner Done`);
+            }, 1000);
+          } else {
+            setTimeout(() => {
+              reject(`Failed to TurnOffAirConditioner`);
+            }, 3000);
+          }
+        });
+      };
+
+      // 7
+      const smartTurnOffWashingMachine = async () => {
+        return new Promise((resolve, reject) => {
+          if (hour >= 14 && hour <= 17) {
+            setTimeout(() => {
+              resolve('TurnOffWashingMachine Done');
+            }, 1500);
+          } else {
+            setTimeout(() => {
+              reject('Failed to TurnOffWashingMachine');
+            }, 500);
+          }
+        });
+      };
+
+      // 4
+      const energySaving = async () => {
+        try {
+          const r = await smartTurnOffLight();
+          const s = await smartTurnOffAirConditioner();
+          const t = await smartTurnOffWashingMachine();
+
+          // 8
+          console.log('Energy Saving is Off');
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      const listOfFunctions = [
+        smartTurnOffLight(),
+        smartTurnOffAirConditioner(),
+        smartTurnOffWashingMachine()
+      ];
+
+      // 9
+      const energySavingConcurrent = async () => {
+        try {
+          const [fn1, fn2, fn3] = await Promise.all(listOfFunctions);
+          console.log(fn1, fn2, fn3);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      energySavingConcurrent();
+    </script>
+  </body>
+</html>
