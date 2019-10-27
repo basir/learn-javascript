@@ -26,35 +26,25 @@
         actions.forEach(printAction);
 
         //Log them as ordered list into console with composing .map() and .forEach().
-        const orderedList = actions.map((action, i) => {
-            return (`${i + 1}. ${action}`);
-        });
+        const orderedList = actions.map((action,i) =>(`${i+1}. ${action}`));
         orderedList.forEach(printAction);
 
         //Filter items that start with c charachter and then as ordered list log 
         //them into console with composing .filter(), .map() and .forEach().
         const startsWithC = actions.filter((action) => action.startsWith('c'));
-        const filteredList = startsWithC.map((action, i) => {
-            return (`${i + 1}. ${action}`);
-        });
+        const filteredList = startsWithC.map((action, i) =>(`${i + 1}. ${action}`));
         filteredList.forEach(printAction);
 
         //Make array `actionsLetters` that holds number of letters in each item of the array
-        const actionsLetters = actions.map(
-            action => action.replace(/ /g, "").length
-        );
+        const actionsLetters = actions.map(action => action.replace(/\s/g, "").length);
         console.log(actionsLetters);
 
         //Do the sum of letters of all items in the array
-        const summedLetters = actionsLetters.reduce((accumulator, currentValue) => {
-            return accumulator + currentValue
-        })
+        const summedLetters = actionsLetters.reduce((accumulator, currentValue) =>accumulator + currentValue);
         console.log(summedLetters);
 
         //Find first item of `actionsLetters` that has less than 10 letters
-        const lessThanTen = actionsLetters.findIndex(num => {
-            return num < 10;
-        });
+        const lessThanTen = actionsLetters.findIndex(num => num < 10 );
         console.log(lessThanTen);
     </script>
 </body>
