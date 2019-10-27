@@ -12,7 +12,7 @@
       // 5
       const smartTurnOffLight = async () => {
         return new Promise((resolve, reject) => {
-          if (hour >= 7 && hour <= 9) {
+          if (hour >= 7 && hour <= 18) {
             setTimeout(() => {
               resolve('TurnOffLightDone');
             }, 3000);
@@ -27,13 +27,13 @@
       // 6
       const smartTurnOffAirConditioner = async () => {
         return new Promise((resolve, reject) => {
-          if (month >= 6 && hour <= 8) {
+          if (month >= 6 && month <= 8) {
             setTimeout(() => {
               resolve(`TurnOffAirConditioner Done`);
             }, 1000);
           } else {
             setTimeout(() => {
-              resolve(`Failed to TurnOffAirConditioner`);
+              reject(`Failed to TurnOffAirConditioner`);
             }, 3000);
           }
         });
@@ -42,7 +42,7 @@
       // 7
       const smartTurnOffWashingMachine = async () => {
         return new Promise((resolve, reject) => {
-          if (hour >= 20 && hour <= 22) {
+          if (hour >= 14 && hour <= 17) {
             setTimeout(() => {
               resolve('TurnOffWashingMachine Done');
             }, 1500);
@@ -69,17 +69,15 @@
       };
 
       const listOfFunctions = [
-        smartTurnOffLight,
-        smartTurnOffAirConditioner,
-        smartTurnOffWashingMachine
+        smartTurnOffLight(),
+        smartTurnOffAirConditioner(),
+        smartTurnOffWashingMachine()
       ];
 
       // 9
       const energySavingConcurrent = async () => {
         try {
-          const [fn1, fn2, fn3] = await Promise.all(
-            listOfFunctions.map(fn => fn())
-          );
+          const [fn1, fn2, fn3] = await Promise.all(listOfFunctions);
           console.log(fn1, fn2, fn3);
         } catch (error) {
           console.log(error);

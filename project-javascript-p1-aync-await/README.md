@@ -32,7 +32,7 @@ If you are not familiar with them please download Learn JavaScript eBook from ht
 
 6. function smartTurnOffAirConditioner is async and check a current date, if it is summer it return `TurnOffAirConditioner Done` string after 1 seconds else throw exception `Failed to TurnOffAirConditioner` after 3 seconds.
 
-7. function smartTurnOffWashingMachine is async and check a current time, if it is between 8pm to 10pm it return `TurnOffWashingMachine Done` string after 1.5 seconds else throw exception `Failed to TurnOffWashingMachine` after 0.5 seconds.
+7. function smartTurnOffWashingMachine is async and check a current time, if it is between 2pm to 5pm it return `TurnOffWashingMachine Done` string after 1.5 seconds else throw exception `Failed to TurnOffWashingMachine` after 0.5 seconds.
 
 8. In energySaving function if all functions run successfully console.log("Energy Saving is Off") else show errors.
 
