@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+  <body>
     <script>
-        //1st task
-        function repeat(func, param, times) {
-            for (let i = 1; i <= times; i++) {
-                func(param);
-            }
+      //1st task
+      function repeat(func, param, times) {
+        for (let i = 1; i <= times; i++) {
+          func(param);
         }
-        const displayLog = function (message) {
-            console.log(message)
-        }
-        repeat(displayLog, 'run number', 5);
+      }
+      const displayLog = function(message) {
+        console.log(message);
+      };
+      repeat(displayLog, 'run number', 5);
 
-        //2nd Task
-        function repeatDuration(repeat, times, func, param) {
-            console.time('executiontime');
-            repeat(func, param, times);
-            console.timeEnd('executiontime');
-        }
-        repeatDuration(repeat, 5, displayLog, 'run number');
+      //2nd Task
+      function repeatDuration(repeat, times, func, param) {
+        console.time('executiontime');
+        repeat(func, param, times);
+        console.timeEnd('executiontime');
+      }
+      repeatDuration(repeat, 5, displayLog, 'run number');
 
-        //task 3
-        function factorial(x) {
-            if (x === 0) {
-                return 1;
-            }
-            return x * factorial(x - 1);
+      //task 3
+      function factorial(x) {
+        if (x === 0) {
+          return 1;
         }
-        console.log(factorial(5));
+        return x * factorial(x - 1);
+      }
+      console.log(factorial(5));
 
-        //task 4
-        repeatDuration(repeat, 1000, factorial, 20)
+      //task 4
+      repeatDuration(repeat, 1000, factorial, 20);
     </script>
-</body>
-
+  </body>
 </html>
