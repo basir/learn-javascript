@@ -12,7 +12,7 @@
 
 - [Project B1 Variables ](project-javascript-b1-variables)
 
-- [Project C1 Conditional Satements](project-javascript-c1-conditional-statements)
+- [Project C1 Conditional Statements](project-javascript-c1-conditional-statements)
 
 - [Project D1 Functions](project-javascript-d1-functions)
 
@@ -36,9 +36,9 @@
 
 - [Project K1 Modules](project-javascript-k1-modules)
 
-- [Project L1 Asynchronous Programing](project-javascript-l1-asynchronous-programing)
+- [Project L1 Asynchronous Programming](project-javascript-l1-asynchronous-programming)
 
-- [Project L2 Asynchronous Programing](project-javascript-l2-asynchronous-programing)
+- [Project L2 Asynchronous Programming](project-javascript-l2-asynchronous-programming)
 
 * [Project M1 Ajax Requests](project-javascript-m1-ajax-requests)
 
