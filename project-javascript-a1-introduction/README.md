@@ -1,9 +1,7 @@
 # Project JavaScript A1 Introduction
 
-To code this project you need to know:
+Topics:
 Console, Comments, Data Types, Arithmetic Operators, String Concatenation, Properties, Methods, Built-in Objects
-
-If you are not familiar with them download Learn JavaScript eBook from (https://codingwithbasir.com/learn-javascript)
 
 ## Project Title: Marksheet
 
@@ -40,3 +38,11 @@ Note:
 ```
 console.log("Subjects \t Full Marks \t Pass Marks \t Obtained");
 ```
+
+## Want to get reviewed?
+
+Send Pull Request. Check how to deliver your code: https://codingwithbasir.com/how-to-deliver-projects/
+
+## Need help?
+
+Download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript

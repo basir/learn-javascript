@@ -1,7 +1,6 @@
 # Project JavaScript B1 Variables
 
-To code this project you need to know how to:
-Create a Variable: let
+Topics: Create a Variable: let
 , Create a Variable: const
 , Mathematical Assignment Operators
 , The Increment and Decrement Operator
@@ -9,8 +8,6 @@ Create a Variable: let
 , String Interpolation
 , typeof operator
 , Review Variables
-
-If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: College Cost Calculator
 
@@ -42,3 +39,11 @@ All variables are number.
 5. Imagine you have 5 years to save money for college. How much do you need to save annually to afford the college cost? Log the result into console like this:
 
 `You need to save ${annualSaving} annually for ${yearsUntilCollege} years.`
+
+## Want to get reviewed?
+
+Send Pull Request. Check how to deliver your code: https://codingwithbasir.com/how-to-deliver-projects/
+
+## Need help?
+
+Download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript

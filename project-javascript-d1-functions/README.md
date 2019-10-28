@@ -1,16 +1,14 @@
-# Project JavaScript D1 Date Formatter
+# Project JavaScript D1 Functions
 
-- Function Declarations
-- Calling a Function
-- Parameters and Arguments
-- Default Parameters
-- Return
-- Helper Functions
-- Function Expressions
-- Arrow Functions
-- Concise Body Arrow Functions
-
-If you are not familiar with them please download Learn JavaScript eBook at https://codingwithbasir.com/learn-javascript
+Topics: Function Declarations
+, Calling a Function
+, Parameters and Arguments
+, Default Parameters
+, Return
+, Helper Functions
+, Function Expressions
+, Arrow Functions
+, Concise Body Arrow Functions
 
 ## Project Title: Date Formatter
 
@@ -49,3 +47,11 @@ All variables are number.
 8. Declare a function expression named `nextYear` that get a year and return next year. Call `formatDate` with `nextYear(year)` as first parameter and `month` and `day` for next 2 parameters.
 
 9. Declare a function named `formatDateConcised` with arrow functions that implements `formatDate` functionality with concise format.
+
+## Want to get reviewed?
+
+Send Pull Request. Check how to deliver your code: https://codingwithbasir.com/how-to-deliver-projects/
+
+## Need help?
+
+Download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
