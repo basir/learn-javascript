@@ -32,7 +32,7 @@
 
 - [Project I1 Classes](project-javascript-i1-classes)
 
-- [Project I1 Transpilation](project-javascript-j1-transpilation)
+- [Project J1 Transpilation](project-javascript-j1-transpilation)
 
 - [Project K1 Modules](project-javascript-k1-modules)
 
