@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart House</title>
+</head>
+<body>
+    <script>
+    const currentTime = new Date().getHours();
+    const currentDate = new Date().getMonth();
+    async function smartTurnOffLight(){
+        return new Promise((resolve, reject) =>{
+            if(currentTime > 7 && currentTime < 18){
+                setTimeout(()=>{
+                    resolve('Turn Off Light Done!')},3000);
+                }else{
+                    setTimeout(()=>{
+                        reject('Failed to Turn Off Light')},2000);
+                    }
+            }
+        );
+    }
+    async function smartTurnOffAirConditioner(){
+        return new Promise((resolve, reject) =>{
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            if(currentDate === months.indexOf('Jun') || currentDate === months.indexOf('Jul')|| currentDate === months.indexOf('Aug')){
+                setTimeout(()=>{
+                    resolve('Turn Off Air Conditioner Done!')},1000);
+                } else {
+                    setTimeout(()=>{
+                        reject('Failed to Turn Off Air Conditioner')},3000);
+                    }
+            }
+        );
+    }
+
+    async function smartTurnOffWashingMachine(){
+        return new Promise((resolve, reject) =>{
+            if(currentTime > 14 && currentTime < 17){
+                setTimeout(()=>{
+                    resolve('Turn Off Washing Machine Done!')},1500);
+                }else{
+                    setTimeout(()=>{
+                        reject('Failed to Turn Off Washing Machine')},500);
+                    }
+
+            }
+        );
+    }
+    /* Dependent promises */
+   const energySaving = async() => {
+        try{
+            const firstValue = await smartTurnOffLight();
+            const secondValue = await smartTurnOffAirConditioner();
+            const thirdValue = await smartTurnOffWashingMachine();
+            console.log('Energy Saving is ON!')
+        } catch(error) {
+            console.log(error);
+            }
+    };
+    energySaving();
+    /* Concurrency for Independent promises */
+    const energySavingConcurrent = async() => {
+            const resultArray = await[smartTurnOffLight(),smartTurnOffAirConditioner(),smartTurnOffWashingMachine()];
+            const [first, second, third] = resultArray;
+            for(let i=0; i<resultArray.length; i++){
+                resultArray[i]
+                    .then((resolveValue)=>{
+                        console.log(resolveValue);
+                        })
+                    .catch((rejectValue)=>{
+                        console.log(rejectValue);
+                        });
+           }
+    }
+    energySavingConcurrent();
+    </script>
+</body>
+</html>

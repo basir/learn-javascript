@@ -1,14 +1,12 @@
-# Project JavaScript C1 Dog Food Recommender
+# Project JavaScript C1 Conditional Statements
 
-In this project you need to know :
+Topics:
 The if keyword,
 if...else statements comparison operators logical operators,
 Truthy and falsy,
 Truthy and falsy assignment ternary operator,
 Else if statements,
 The switch keyword
-
-If you are not familiar with them please download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript
 
 ## Project Title: Dog Food Recommender
 
@@ -53,3 +51,11 @@ Height is number.
 - If Chihuahua, Log "Canned"
 
 Use switch case for this task.
+
+## Want to get reviewed?
+
+Send Pull Request. Check how to deliver your code: https://codingwithbasir.com/how-to-deliver-projects/
+
+## Need help?
+
+Download Learn JavaScript eBook from https://codingwithbasir.com/learn-javascript

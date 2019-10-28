@@ -1,0 +1,56 @@
+!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //Create an employee object
+        let employee = {
+            name: 'Edd',
+            age: 21,
+            department: 'sales'
+        };
+        //Log them into console
+        console.log(`Employee Info: Name: ${employee.name}, Age: ${employee.age}, Department: ${employee.department}`);
+
+        //Add a new property to `employee` for `phone number`
+        employee['phone Number'] = '00123456789';
+        console.log(`Employee ${employee.name} number is ${employee['phone Number']}.`)
+
+        //Define a function name `getPropValue` 
+        let getPropValue = (object, property) => object[property];
+        console.log(getPropValue(employee, 'name'));
+        console.log(getPropValue(employee, 'phone Number'));
+
+        //Add a method to employee named showVisitCard()
+        employee['showVisitCard'] = () => {
+            for (let property in employee)
+                console.log(`${property}: ${employee[property]}`);
+        }
+        employee.showVisitCard()
+
+        //Add a property named `educations`
+        employee.educations = {
+            universtiy1: { gpa: 3.5, year: 2019 },
+            universtiy2: { gpa: 4.0, year: 2015 },
+            universtiy3: { gpa: 3.75, year: 2010 },
+            universtiy4: { gpa: 3.0, year: 2005 }
+        };
+        //Log educations into console using `for in` command.
+        for (let education in employee.educations) {
+            console.log(`${education}: gpa: ${employee.educations[education].gpa}, year: ${employee.educations[education].year}`)
+        };
+        //Calculate average of gpa and log it into console.
+        let averageGpa = 0;
+        let count = 0;
+        for (let education in employee.educations) {
+            averageGpa += employee.educations[education].gpa
+            count++;
+
+        };
+        averageGpa /= count;
+        console.log(`Average Gpa: ${averageGpa}`)
+
+    </script>
+</body>
+
+</html>
