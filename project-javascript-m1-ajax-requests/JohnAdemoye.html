@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      const xhr3 = new XMLHttpRequest();
+      xhr3.onreadystatechange = function() {
+        if (xhr3.readyState == XMLHttpRequest.DONE) {
+          console.log(xhr3.responseText);
+        }
+      };
+      xhr3.open('GET', 'https://uinames.com/api/', true);
+      xhr3.send(null);
+
+      // 4
+      const xhr4 = new XMLHttpRequest();
+      xhr4.onreadystatechange = function() {
+        if (xhr4.readyState == XMLHttpRequest.DONE) {
+          console.log(xhr4.responseText);
+        }
+      };
+      xhr4.open('GET', 'https://uinames.com/api/?gender=female', true);
+      xhr4.send(null);
+
+      // 5
+      const xhr5 = new XMLHttpRequest();
+      xhr5.onreadystatechange = function() {
+        if (xhr4.readyState == XMLHttpRequest.DONE) {
+          console.log(xhr5.responseText);
+        }
+      };
+      xhr5.open(
+        'GET',
+        'https://uinames.com/api/?gender=female&region=germany',
+        true
+      );
+      xhr5.send(null);
+
+      // 6
+      const xhr6 = new XMLHttpRequest();
+      xhr6.open('POST', 'https://reqres.in/api/users', true);
+      xhr6.send({
+        name: 'morpheus',
+        job: 'leader'
+      });
+    </script>
+  </body>
+</html>
