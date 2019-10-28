@@ -3,7 +3,7 @@
 1. Download Free eBook: https://codingwithbasir.com/download
 2. Fork and Clone This repository
 3. Code Following Projects
-4. Send a Pull Request
+4. Send Pull Requests
 5. Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## Projects
@@ -16,7 +16,7 @@
 
 - [Project D1 Functions](project-javascript-d1-functions)
 
-- [Project D2 Functions](project-javascript-d1-functions)
+- [Project D2 Functions](project-javascript-d2-functions)
 
 - [Project E1 Arrays](project-javascript-e1-arrays)
 
@@ -24,11 +24,11 @@
 
 - [Project G1 Iterators](project-javascript-g1-iterators)
 
-- [Project G1 Iterators](project-javascript-g2-iterators)
+- [Project G2 Iterators](project-javascript-g2-iterators)
 
 - [Project H1 Objects](project-javascript-h1-objects)
 
-- [Project H1 Objects](project-javascript-h2-objects)
+- [Project H2 Objects](project-javascript-h2-objects)
 
 - [Project I1 Classes](project-javascript-i1-classes)
 
@@ -37,6 +37,8 @@
 - [Project K1 Modules](project-javascript-k1-modules)
 
 - [Project L1 Asynchronous Programing](project-javascript-l1-asynchronous-programing)
+
+- [Project L2 Asynchronous Programing](project-javascript-l2-asynchronous-programing)
 
 * [Project M1 Ajax Requests](project-javascript-m1-ajax-requests)
 
