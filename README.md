@@ -1,10 +1,10 @@
 # Learn JavaScript
 
-1. Download Free eBook: https://codingwithbasir.com/download
-2. Fork and Clone This repository
-3. Code Following Projects
-4. Send Pull Requests
-5. Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
+1. [Download free eBook](https://codingwithbasir.com/download)
+2. Code following projects
+3. Deliver projects to me ([How To](https://codingwithbasir.com/how-to-deliver-projects/))
+4. I review your code and give you feedback.
+5. Have questions? Email [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## Projects
 
