@@ -5,7 +5,9 @@
       // your code here
 
       // 3
-      fetch('https://reqres.in/api/users?page=2');
+      fetch('https://reqres.in/api/users?page=2').then(response =>
+        console.log(response)
+      );
 
       // 4
       fetch('https://reqres.in/api/users/2')
