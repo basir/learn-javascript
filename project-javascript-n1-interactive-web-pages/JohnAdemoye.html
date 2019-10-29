@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Lucky Number</h1>
+    <button class="luckyNumberBtn">lucky number</button>
+    <button class="guessNumberBtn">Guess Number</button>
+
+    <div
+      class="banner"
+      style="background: blueviolet; color: white; text-align: center; width: 60%; padding: 2em 1em; font-size: 2em; margin: 1em auto; "
+    >
+      "You're a winner. Don't give up." - Bassir JD
+    </div>
+    <div style="margin: 1em auto; text-align: center;">
+      <button
+        class="removeBtn"
+        style="text-transform: uppercase; padding: .5em .5em; border-radius: 30px; outline: none; box-shadow: 1px 0px 5px 1px;"
+      >
+        Remove Banner
+      </button>
+    </div>
+    <script>
+      // your code here
+
+      // 4
+      const luckyNumberBtn = document.querySelector('.luckyNumberBtn');
+      luckyNumberBtn.onclick = () => {
+        // 3
+        const random = Math.floor(Math.random() * 10) + 1;
+        console.log(random);
+        alert(random);
+      };
+
+      // 5
+      const guessNumberBtn = document.querySelector('.guessNumberBtn');
+      guessNumberBtn.onclick = () => {
+        // 3
+        const random = Math.floor(Math.random() * 10) + 1;
+        const value = prompt('Enter a number');
+        console.log(value);
+
+        value == random ? alert('You won!') : alert('You lost!');
+      };
+
+      // 6
+      const removeBtn = document.querySelector('.removeBtn');
+      const banner = document.querySelector('.banner');
+      banner.style.display = 'none';
+      removeBtn.style.display = 'none';
+
+      setTimeout(() => {
+        banner.style.display = 'block';
+        removeBtn.style.display = 'inline';
+      }, 10000);
+
+      removeBtn.onclick = () => {
+        banner.style.display = 'none';
+        removeBtn.style.display = 'none';
+      };
+    </script>
+  </body>
+</html>

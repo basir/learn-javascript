@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // your code here
+
+      // 3
+      fetch('https://reqres.in/api/users?page=2').then(response =>
+        console.log(response)
+      );
+
+      // 4
+      fetch('https://reqres.in/api/users/2')
+        .then(response => response.json())
+        .then(person => console.log(person.data))
+        .catch(err => console.log(err));
+
+      // 5
+      fetch('https://reqres.in/api/users', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: 'morpheus',
+          job: 'leader'
+        }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(person => console.log(person))
+        .catch(err => console.log(err));
+
+      // 6
+      fetch('https://reqres.in/api/users', {
+        method: 'PUT',
+        body: JSON.stringify({
+          name: 'morpheus',
+          job: 'zion resident'
+        }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(person => console.log(person))
+        .catch(err => console.log(err));
+
+      // 7
+      fetch('https://reqres.in/api/users', {
+        method: 'DELETE',
+        body: JSON.stringify({
+          name: 'morpheus',
+          job: 'zion resident'
+        }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      });
+
+      // 8
+      fetch('https://reqres.in/api/login', {
+        method: 'POST',
+        body: JSON.stringify({
+          email: 'eve.holt@reqres.in',
+          password: 'cityslicka'
+        }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(person => console.log(person))
+        .catch(err => console.log(err));
+    </script>
+  </body>
+</html>
