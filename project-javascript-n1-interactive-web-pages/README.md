@@ -40,7 +40,7 @@ Topics: The document keyword
 
 5. Create another button set caption to Guess Number. It prompt a number from user and check if it equal to lucky number alert "You won" else aler "You lose."
 
-6. Afetr 10 second of loading page, show a small banner at the top of the page and show this message:
+6. After 10 seconds of loading page, show a small banner at the top of the page and show this message:
    " You are winner . Do not give up"
    Put a close button next to banner and remove the banner when user click on it.
 
