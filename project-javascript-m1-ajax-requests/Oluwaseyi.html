@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Names</title>
+</head>
+<body>
+<script>
+     /* 3: XHR GET Request for a random name. */
+    const xhr_1 = new XMLHttpRequest();
+    const url_1 = 'https://uinames.com/api/';
+    xhr_1.responseType = 'json';
+    xhr_1.onreadystatechange = () => {
+        if(xhr_1.readyState === XMLHttpRequest.DONE){
+            return xhr_1.response
+        }
+    }
+    xhr_1.open('GET', url_1);
+    xhr_1.send();
+    console.log(xhr_1.response);
+
+    /* 4: XHR GET Request for a random female name. */
+    const xhr_2 = new XMLHttpRequest();
+    const url_2 = 'https://uinames.com/api/?gender=female';
+    xhr_2.responseType = 'json';
+    xhr_2.onreadystatechange = () => {
+        if(xhr_2.readyState === XMLHttpRequest.DONE){
+            return xhr_2.response
+        }
+    }
+    xhr_2.open('GET', url_2);
+    xhr_2.send();
+    console.log(xhr_2.response);
+
+    /* 5: XHR GET Request for a random female name from Germany. */
+    const xhr_3 = new XMLHttpRequest();
+    const url_3 = 'https://uinames.com/api/?gender=female&region=germany';
+    xhr_3.responseType = 'json';
+    xhr_3.onreadystatechange = () => {
+        if(xhr_3.readyState === XMLHttpRequest.DONE){
+            return xhr_3.response
+        }
+    }
+    xhr_3.open('GET', url_3);
+    xhr_3.send(null);
+    console.log(xhr_3.response);
+
+    /* 6: XHR POST Request */
+    const xhr_4 = new XMLHttpRequest();
+    const url_4 = 'https://reqres.in/api/users';
+    const data = JSON.stringify({
+        "name" : "morpheus",
+        "Job" : "Leader"
+        }
+    );
+    xhr_4.responseType = 'json';
+    xhr_4.onreadystatechange = () => {
+        if(xhr_4.readyState === XMLHttpRequest.DONE){
+            return xhr_4.response;
+        }
+    }
+    xhr_4.open('POST',url_4);
+    xhr_4.send(data);
+    console.log(xhr_4.response);
+</script>
+</body>
+</html>
