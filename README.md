@@ -1,10 +1,10 @@
 # Learn JavaScript
 
-1. Download Free eBook: https://codingwithbasir.com/download
-2. Fork and Clone This repository
-3. Code Following Projects
-4. Send Pull Requests
-5. Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
+1. [Download free eBook](https://codingwithbasir.com/download)
+2. Code following projects
+3. Deliver projects to me ([How To](https://codingwithbasir.com/how-to-deliver-projects/))
+4. I review your code and give you feedback.
+5. Have questions? Email [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## Projects
 
@@ -12,7 +12,7 @@
 
 - [Project B1 Variables ](project-javascript-b1-variables)
 
-- [Project C1 Conditional Satements](project-javascript-c1-conditional-statements)
+- [Project C1 Conditional Statements](project-javascript-c1-conditional-statements)
 
 - [Project D1 Functions](project-javascript-d1-functions)
 
@@ -32,13 +32,13 @@
 
 - [Project I1 Classes](project-javascript-i1-classes)
 
-- [Project I1 Transpilation](project-javascript-j1-transpilation)
+- [Project J1 Transpilation](project-javascript-j1-transpilation)
 
 - [Project K1 Modules](project-javascript-k1-modules)
 
-- [Project L1 Asynchronous Programing](project-javascript-l1-asynchronous-programing)
+- [Project L1 Asynchronous Programming](project-javascript-l1-asynchronous-programming)
 
-- [Project L2 Asynchronous Programing](project-javascript-l2-asynchronous-programing)
+- [Project L2 Asynchronous Programming](project-javascript-l2-asynchronous-programming)
 
 * [Project M1 Ajax Requests](project-javascript-m1-ajax-requests)
 
