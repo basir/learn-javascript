@@ -17,10 +17,7 @@
             },
             //Define a getter method named fullName
             get fullName() {
-                if (!this.firstName) {
-                    return `Mr/Mrs ${this.lastName}`;
-                } else
-                    return `${this.firstName} ${this.lastName}`;
+                 !this.firstName ? console.log(`Mr/Mrs ${this.lastName}`) : console.log(`${this.firstName} ${this.lastName}`);    
             },
             //Define a setter method named gpa
             set gpa(studentGpa) {
@@ -52,23 +49,15 @@
         const myCourse = courseFactory(1, "Math", 3);
         myCourse.show();
 
-
         //Check that myCourse has teacher property,
-        if (myCourse.teacher) {
-            console.log(myCourse.teacher);
-        } else {
-            console.log('no teacher');
-        }
+        myCourse.hasOwnProperty('teacher') ? console.log("Teacher") : console.log("No teacher");
+
         //Use object.assign to merge courseAddition into myCourse.
         const courseAddition = { teacher: "Dr Mark" };
         Object.assign(myCourse, courseAddition);
 
         //Check that myCourse has teacher property,
-        if (myCourse.teacher) {
-            console.log('teacher');
-        } else {
-            console.log('no teacher');
-        }
+        myCourse.hasOwnProperty('teacher') ? console.log("Teacher") : console.log("No teacher");
 
         //Show all fields and values into myCourse with object.keys
         console.log(Object.keys(myCourse).map(element => `${element}-${myCourse[element]}`));
