@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management</title>
+</head>
+<body>
+<script>
+    /* 3. Getting info of users at page 2 using fetch() GET request */
+    fetch('https://reqres.in/api/users?page=2').then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+        throw new Error('Request failed!');
+        }, networkError =>{
+                console.log(networkError.message);
+    }).then(jsonResponse => {
+        return jsonResponse;
+    });
+    /* 4. Getting info of a single user and logging to the console */
+    fetch('https://reqres.in/api/users/2').then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+        throw new Error('Request failed!');
+        }, networkError =>{
+                console.log(networkError.message);
+    }).then(jsonResponse => {
+        return jsonResponse;
+    });
+    console.log(response.json());
+
+    /* 5: Creating a new User */
+
+    fetch('https://reqres.in/api/users', {
+        method: 'POST',
+        body: JSON.stringify({
+            "name": 'morpheus'
+            "job" : 'Leader'
+            }
+        )
+    }).then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+            throw new Error('Request Failed!');
+    }, networkError => {
+        console.log(networkError.message);
+    }).then(jsonResponse => {
+        console.log(jsonResponse);
+    })
+
+    /* 6: Updating a User */
+    fetch('https://reqres.in/api/users/2', {
+        method: 'PATCH',
+        body: JSON.stringify({
+            "name": 'morpheus'
+            "job" : 'Zion resident'
+            }
+        )
+    }).then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+            throw new Error('Request Failed!');
+    }, networkError => {
+        console.log(networkError.message);
+    }).then(jsonResponse => {
+        console.log(jsonResponse);
+    })
+
+    /* 7: Deleting a User */
+    fetch('https://reqres.in/api/users/2', {
+        method: 'DELETE',
+        body: JSON.stringify({
+            "name": 'morpheus'
+            "job" : 'Zion resident'
+            }
+        )
+    }).then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+            throw new Error('Request Failed!');
+    }, networkError => {
+        console.log(networkError.message);
+    }).then(jsonResponse => {
+        console.log(jsonResponse);
+    })
+
+    /* 8: Login a User and show token into console */
+    fetch('https://reqres.in/api/login', {
+        method: 'POST',
+        body: JSON.stringify({
+            "email": 'eve.holt@reqres.in'
+            "password" : 'cityslicka'
+            }
+        )
+    }).then(response =>{
+        if(response.ok){
+            return response.json();
+        }
+            throw new Error('Request Failed!');
+    }, networkError => {
+        console.log(networkError.message);
+    }).then(jsonResponse => {
+        console.log(jsonResponse);
+    })
+
+
+</script>
+</body>
+</html>
