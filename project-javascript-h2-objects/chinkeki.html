@@ -17,7 +17,11 @@
             },
             //Define a getter method named fullName
             get fullName() {
-                !this.firstName ? console.log(`Mr/Mrs ${this.lastName}`) : console.log(`${this.firstName} ${this.lastName}`);
+                if(!this.firstName){
+            return `Mr/Mrs ${this.lastName}`;
+                }else{
+                    return `${this.firstName} ${this.lastName}`;
+                   }
             },
             //Define a setter method named gpa
             set gpa(studentGpa) {
@@ -31,7 +35,7 @@
         }
         student.gpa = 2;
         console.log(student._gpa);
-        student.fullName;
+        console.log(student.fullName);
 
         //Create a factory function named courseFactory.
         const courseFactory = (id, name, credit) => {
@@ -50,12 +54,12 @@
 
 
         //Check that myCourse has teacher property,
-        myCourse.hasOwnProperty("teacher") ? console.log("Teacher") : console.log("No teacher");
+        myCourse.hasOwnProperty("teacher") ? console.log(myCourse.teacher) : console.log("No teacher");
         //Use object.assign to merge courseAddition into myCourse.
         const courseAddition = { teacher: "Dr Mark" };
         Object.assign(myCourse, courseAddition);
         //Check that myCourse has teacher property,
-        myCourse.hasOwnProperty('teacher') ? console.log("Teacher") : console.log("No teacher");
+        myCourse.hasOwnProperty('teacher') ? console.log(myCourse.teacher) : console.log("No teacher");
 
         //Show all fields and values into myCourse with object.keys
         console.log(Object.keys(myCourse).map(element => `${element} ${myCourse[element]}`));
