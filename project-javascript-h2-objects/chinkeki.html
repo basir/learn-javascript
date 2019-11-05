@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //Create a student object
+        const student = {
+            id: 953,
+            firstName: 'Chinkeki',
+            lastName: 'Chiwaya',
+            major: 'Computer Science',
+            _gpa: 3.4,
+            showStudentInfo() {
+                for (let key in student) {
+                    console.log(`Name: {${this.firstName} ${this.lastName}} (ID:{${this.id}} ) Major: {${this.major}} GPA: {${this._gpa}}`);
+                }
+            },
+            //Define a getter method named fullName
+            get fullName() {
+                if(!this.firstName){
+            return `Mr/Mrs ${this.lastName}`;
+                }else{
+                    return `${this.firstName} ${this.lastName}`;
+                   }
+            },
+            //Define a setter method named gpa
+            set gpa(studentGpa) {
+                if (studentGpa < 0 || studentGpa > 4) {
+                    console.log('Error');
+                } else {
+                    this._gpa = studentGpa;
+                }
+            }
+
+        }
+        student.gpa = 2;
+        console.log(student._gpa);
+        console.log(student.fullName);
+
+        //Create a factory function named courseFactory.
+        const courseFactory = (id, name, credit) => {
+            return {
+                id,
+                name,
+                credit,
+                show() {
+                    return console.log(`${id} ${name} ${credit}`);
+                }
+            }
+        }
+        //Call this function with parameters
+        const myCourse = courseFactory(1, "Math", 3);
+        myCourse.show();
+
+
+        //Check that myCourse has teacher property,
+        myCourse.hasOwnProperty("teacher") ? console.log(myCourse.teacher) : console.log("No teacher");
+        //Use object.assign to merge courseAddition into myCourse.
+        const courseAddition = { teacher: "Dr Mark" };
+        Object.assign(myCourse, courseAddition);
+        //Check that myCourse has teacher property,
+        myCourse.hasOwnProperty('teacher') ? console.log(myCourse.teacher) : console.log("No teacher");
+
+        //Show all fields and values into myCourse with object.keys
+        console.log(Object.keys(myCourse).map(element => `${element} ${myCourse[element]}`));
+
+    </script>
+</body>
+
+</html>
