@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky Numbers</title>
+    <style type="text/css">
+        #banner{
+        opacity:98%;
+        display:none;
+        background: cyan;
+        color: purple;
+        border-radius: 20px;
+        text-align: center;
+        width: 60%;
+        padding: 2em 1em;
+        font-size: 2em;
+        margin: 1em auto;
+        }
+
+        /* Buttons */
+        button {
+        width:15%;
+        height:45px;
+        border-radius:3px;
+        background-color:Purple;
+        color:#fff;
+        font-family:'Raleway',sans-serif;
+        font-size:18px;
+        cursor:pointer
+        }
+    </style>
+    <script type="text/javaScript">
+    /* Generate random number between 1 to 10*/
+    const luckyNumber = Math.floor(Math.random()*10)+1;
+
+    /* Display Lucky Number */
+    function randomNumber(){
+        console.log(luckyNumber);
+        alert(`Your lucky number is ${luckyNumber}`);
+    }
+    /* Lucky Guess */
+    function guessNumber() {
+        const userInput = prompt("Enter a number between 1 to 10.");
+        console.log(userInput);
+            if (userInput === "") {
+                alert(`Enter a number between 1 to 10.`);
+            }else if (userInput < 1 || userInput > 10 ){
+                  alert('Number entered is outside the range.')
+            }else if(userInput == luckyNumber){
+                  alert(`You Won!`);
+            }else{
+                 alert(`You Lost!`);
+                 }
+    }
+    /* Display Banner */
+    function showBanner() {
+      document.getElementById('banner').style.display = "block";
+    }
+    /* Hide Banner */
+    function hideBanner(){
+      document.getElementById('banner').style.display = "none";
+    }
+    setTimeout(showBanner,10000);
+    </script>
+</head>
+<body>
+<center>
+    <h1>Lucky Numbers</h1>
+    <button onclick="randomNumber()">Lucky Number</button><br><br>
+    <button onclick="guessNumber()">Guess Number</button>
+    <div id ='banner'>
+        <h2>"You are a Winner. Don't give up!"</h2><br>
+        <button onclick ="hideBanner()">Close X</button>
+    </div>
+</center>
+
+</body>
+</html>
