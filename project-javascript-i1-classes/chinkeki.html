@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //3. Create class named `TrafficLight`.
+        class TrafficLight {
+            constructor(color, address) {
+                //4. Add `color` and `address` to it.
+                this._color = color;
+                this._address = address;
+            }
+            //6. Add a method named `getColor` to get `color`
+            get getColor() {
+                return this._color;
+            }
+            //7. Add a method name `canGo` that checks color and if it is `green` returns true, else false.
+            canGo(color) {
+                if (this._color === 'green') {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        //8. Create class named `VIPTrafficLight` inherits from `TrafficLight`
+        class VIPTrafficLight extends TrafficLight {
+            constructor(color, address, specialEffects) {
+                super(color, address);
+
+                //9. Add field `SpecialEffects` to this class.
+                this._specialEffects = specialEffects;
+            }
+
+            //11. Add method getSpecialEffects() to return the effect.
+            get getSpecialEffects() {
+                return this._specialEffects;
+            }
+            //12. Add method setSpecialEffects() to set the effect.
+            //If it not `dotted`, `solid` or `dashed` do not set and log `No valid Effect`.
+            set setSpecialEffects(specialEffects) {
+                switch (specialEffects) {
+                    case 'dotted':
+                        this._specialEffects = specialEffects;
+                        break;
+                    case 'solid':
+                        this._specialEffects = specialEffects;
+                        break;
+                    case 'dashed':
+                        this._specialEffects = specialEffects;
+                        break;
+                    default:
+                        console.log('No valid Effect');
+                        break;
+                }
+            }
+        }
+
+        //5. Create an instance `myTL` and set`color` to `red` and `address` to `Avenue 1`
+        const myTL = new TrafficLight('red', 'Avenue 1');
+
+        //6. Add a method named `getColor` to get `color` and call with console.log to show into console.
+        console.log(myTL.getColor);
+        console.log(myTL.canGo());
+
+        //10. Create an instance named `myVIP` and set SpecialEffects to `dotted`.
+        const myVIP = new VIPTrafficLight('red', 'Avenue 1', 'dotted');
+        myVIP.setSpecialEffects = 'solid';
+        console.log(myVIP._specialEffects);
+
+    </script>
+</body>
+
+</html>
+```
