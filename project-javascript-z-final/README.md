@@ -8,7 +8,14 @@ It is The Guess Number Game. Computer generate a random number and player guess 
 
 ## The Guess Number Game - Version 1
 
-### Topics you will learn:
+### Questions
+ 1. Create skeleton of web application that incudes a folder with a html file, css file and javascript file.
+   
+ 2. Show `The Guess Number Game` as title and heading in the html file and set background color to black and color to white in the css file.
+   
+ 3. Log  `The Guess Number Game` into console in the script file.
+
+### Topics you will learn
   * VS Code (Workspace)
   * Google Chrome (Dev Tools)
   * HTML5 Document Structure
@@ -37,7 +44,12 @@ It is The Guess Number Game. Computer generate a random number and player guess 
 
 ## The Guess Number Game - Version 2
 
-### Topics you will learn:
+### Questions 
+ 1. Create a random number between 1 and 10 as `secretNumber`.
+ 2. Get a number from user as `guessNumber`.
+ 3. Log variables value and types into console.
+
+### Topics you will learn
   * Defining variables with const, let and var
 
 
