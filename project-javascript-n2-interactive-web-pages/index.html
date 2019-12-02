@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Guess Number</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .container .box {
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        font-size: 36px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container .box-1 {
+        background-color: blue;
+        flex: 1;
+        overflow-y: auto;
+      }
+      .container .box-2 {
+        background-color: green;
+        height: 60px;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <ul id="messages"></ul>
+      </div>
+      <div class="box box-2">
+        <div>
+          <input id="guessNumber" />
+          <button id="makeguess" onclick="makeGuess()">
+            Guess
+          </button>
+          <button id="reset" onclick="reset()">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const min = 1,
+        max = 5;
+      const secretNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      let guessNumber = null;
+      const prevGuesses = [];
+      console.log(secretNumber);
+      addMessage("Computer", "Guess a number");
+
+      function makeGuess() {
+        const guessNumber = document.getElementById("guessNumber").value;
+        document.getElementById("guessNumber").value = "";
+        if (isNaN(guessNumber)) {
+          alert("Enter a number");
+        } else if (guessNumber > max || guessNumber < min) {
+          alert("Enter a number between " + min + " and " + max);
+        } else {
+          addMessage("You", guessNumber);
+          prevGuesses.push(guessNumber);
+          if (guessNumber == secretNumber) {
+            addMessage(
+              "Computer",
+              "Congrats. You guessed right." +
+                " Previous Guesses: " +
+                prevGuesses
+            );
+            // Ending Game
+            document.getElementById("guessNumber").style.display = "none";
+            document.getElementById("makeguess").style.display = "none";
+          } else {
+            if (guessNumber > secretNumber) {
+              addMessage(
+                "Computer",
+                "Too High. Previous Guesses: " + prevGuesses
+              );
+            } else {
+              addMessage(
+                "Computer",
+                "Too Low. Previous Guesses: " + prevGuesses
+              );
+            }
+          }
+        }
+      }
+      function addMessage(sender, message) {
+        var ul = document.getElementById("messages");
+        var li = document.createElement("li");
+        li.innerHTML = "<b>" + sender + "</b>: " + message;
+        ul.appendChild(li);
+        ul.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+
+      document.getElementById("guessNumber").onkeypress = function(e) {
+        if (e.keyCode == 13) {
+          makeGuess();
+        }
+      };
+
+      function reset() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>
