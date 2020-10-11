@@ -32,5 +32,6 @@
         "typescriptreact",
         "yaml",
         "yml"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
