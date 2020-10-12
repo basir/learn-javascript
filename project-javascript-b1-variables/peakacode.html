@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+</head>
+<body>
+        <script>
+            let annualCost = 35000;
+            const inflationRate = .05;
+            let yearlyCost = annualCost * inflationRate + annualCost;
+            let totalCost = yearlyCost * 4;
+            let yearsUntilCollege = 5;
+            let annualSaving = totalCost / yearsUntilCollege;
+
+            console.log(`For a 4 years college degree with annual cost: ${annualCost}  and inflation rate: ${inflationRate}, you have to pay ${totalCost}`);
+            console.log(`You need to save ${annualSaving} annually for ${yearsUntilCollege} years`);
+        </script>
+</body>
+</html>

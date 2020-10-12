@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Food Recommender</title>
+</head>
+<body>
+    <script>
+    let dogSize = 'small';
+    let dogEnergy = 'medium';
+    let dogHeight = 9;
+
+    if (dogSize === 'small' && dogHeight < 9) {
+        console.log('Food: Dry Dog Food');
+    } else if (dogSize === 'medium' || dogHeight > 12) {
+          console.log('Food: Dehydrated Dog Food');
+    } else if (dogSize === 'big' && dogHeight > 17) {
+          console.log('Food: Raw Dog Fod');
+    } else {
+        console.log('Canned Dog Food');
+    }
+
+    let dogBreed = 'Chihuahua';
+    switch(dogBreed) {
+        case 'Affenpinscher' :
+           console.log('Dry');
+           break;
+        case 'Akita' :
+           console.log('Dehydrated');
+           break;
+        case 'Cesky Terrier' :
+           console.log('Raw');
+           break;
+        case 'Chihuahua' :
+           console.log('Canned');
+           break;
+    }    
+    </script>
+</body>
+</html>
