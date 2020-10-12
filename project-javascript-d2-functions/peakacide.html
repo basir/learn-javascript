@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+</head>
+<body>
+    <script>
+        // 3
+        const color = 'blue';      
+        // 4
+        function logColor1(color) {
+            return console.log(color);
+        }
+        // 5
+        function logColor2(color){
+            return console.log(color);
+        }
+        // 6
+        logColor2('red'); 
+        // 7 & 8
+        function logColor3(color){
+            if(color === 'green'){
+                let color = 'lightgreen';
+                return console.log(color);
+            }
+            return console.log(color);
+        }
+        // 9
+        logColor3('green');
+        // 10
+         /*          
+         The const color on line 11 is declared globally. With global declaration const color is now accessible anywhere in the program. Whereas in logColor3 the color green declaration is only limited within its block or locally.         
+         */
+
+         /*
+         const carPaint = 'white';
+        function carColor(carPaint){
+            return console.log(carPaint);
+        }
+        carColor(carPaint);
+        */
+
+    </script>
+</body>
+</html>
