@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Formatter</title>
+</head>
+<body>
+    <script>
+        // 3
+        let year = 2019;
+        let month = 10;
+        let day = 9;
+        let dayOfWeek = 2;
+
+        // 4
+        function showDayName(dayOfWeek) {
+            switch(dayOfWeek){
+                case 1:
+                console.log('Monday');
+                break;
+                case 2:
+                console.log('Tuesday');
+                break;
+                case 3:
+                console.log('Wednesday');
+                break;
+                case 4:
+                console.log('Thursday');
+                break;
+                case 5:
+                console.log('Friday');
+                break;
+                case 6:
+                console.log('Saturday');
+                break;
+                case 7:
+                console.log('Sunday');
+                break;
+            }
+        }
+        const dayName = showDayName(dayOfWeek);
+
+        // 5
+        const userInput = 1;
+        function convert2String(userInput){
+            if(userInput < 10){
+                return `0${userInput}`;
+            }
+            return userInput + '';
+        }
+        const convert = convert2String(userInput);
+        console.log(convert);
+
+        // 6
+        function formatDate(year, month, day){
+            const formatDay = convert2String(day);
+            const formatMonth = convert2String(month);
+            const formatYear = convert2String(year);
+            return `${formatYear}/${formatMonth}/${formatDay}`;
+        }
+        const todaysDate = formatDate(2020, 10, 12);
+        console.log(todaysDate);
+
+        // 7
+        function formatDateChristmas(year = 2020, month = 01, day = 01) {
+            return formatDate(year, month, day)
+        }
+        const christmas = formatDateChristmas();
+        console.log(christmas);
+
+        // 8
+        function nextYear(year){
+            return year + 1;
+        }
+        const upComingYear = formatDate(nextYear(2020),10, 12);
+        console.log(upComingYear);
+
+        // 9
+        const formatDateConcised = (year, month, day) => formatDate(year, month, day);        ;
+        console.log(formatDateConcised(2020,10,12));
+</script>
+</body>
+</html>
