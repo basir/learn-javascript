@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Shop</title>
+</head>
+<body>
+  <script>
+    // 3 Define An Array
+    let shoes = ['Casual Shoes', 'Sneakers', 'Sandals', 'Boat Shoes', 'Dress Shoes'];
+    
+    // 4 Logging to console
+    console.log(shoes[0]);
+    console.log(shoes[shoes.length - 1]);
+
+    // 5 Change last item of array to Derby Shoes and log last item into console.
+    shoes[shoes.length -1] = "Derby Shoes";
+    console.log(shoes[shoes.length - 1]);
+
+    // 6 Add Espadrilles to the array and log last item into console.
+    shoes.push('Espadrilles');
+    console.log(shoes[shoes.length - 1]);
+    
+    // 7 Remove last 3 item of array and log last item into console
+    shoes.pop();
+    shoes.pop();
+    shoes.pop();
+    console.log(shoes[shoes.length - 1]);
+
+    // 8 Create a function named showLength that accepts an array and logs the length of array into console.
+    function showLength(arrItems) {
+      return console.log(arrItems.length);
+    }   
+    showLength(shoes);
+  </script>
+</body>
+</html>
