@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+</head>
+<body>
+  <script>
+    // 03. Create a for loop and log odd numbers from 1 to 11:
+    for(let odd = 1; odd < 12; odd++ ){
+      if(odd %2 !== 0) {
+        console.log(odd);
+      }
+    }
+
+    // 04. Create a for loop and log even numbers from 11 to 1 in reverse:
+    for(let even = 11; even > 0; even-- ){
+      if(even %2 === 0) {
+        console.log(even);
+      }
+    }
+
+    // 05. Define an array named myList and put these items into it:
+    const myList = ['Fruits', 'Milk', 'Cheese', 'Bacon', 'Bread'];
+    // 06. Log all item in the array into console with a for loop. 
+    for(let i = 0; i < myList.length; i++) {
+      console.log(myList[i]);
+    }
+
+    // 07. Create new array named fruits and set it to[['apple','orange','banana],['coconut','cumbersome'],['starbery','bluebery']]
+    const fruits = [['apple', 'orange', 'banana'],['kukunut', 'cumbersome'], ['stalkberry', 'flueberry']];
+    // 08. Create nested for loops to log all items inside fruits in seperate lines.
+    for(let a = 0; a < fruits.length; a++){
+      for(let b  = 0; b < fruits[a].length; b++) {
+        console.log(' - ' + fruits[a][b]);
+      }
+    }
+
+    // 09. Use do while to log myList items in reverse mode. First log Bread, then Baken, etc.   
+      let counter = myList.length -1;
+      do {
+        console.log(myList[counter]);
+        counter--;
+      } while (counter > 0) ;
+  </script>
+</body>
+</html>
